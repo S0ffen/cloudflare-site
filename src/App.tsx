@@ -9,9 +9,15 @@ const App: React.FC = () => {
     <div className="bg-gray-900 text-white min-h-screen">
       <Navbar />
       <Hero />
-      <About />
-      <Projects />
-      <Contact />
+      <section id="about">
+        <About />
+      </section>
+      <section id="projects">
+        <Projects />
+      </section>
+      <section id="contact">
+        <Contact />
+      </section>
     </div>
   );
 };
