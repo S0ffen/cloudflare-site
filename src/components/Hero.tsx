@@ -9,7 +9,7 @@ const Hero: React.FC = () => {
       {/* Lewa strona - tekst */}
       <div className="w-full md:w-[50%] lg:w-[55%] text-center md:text-left space-y-4">
         <p className="text-lg text-gray-400">Hello! I am</p>
-        <h1 className="text-3xl font-bold leading-tight">Soffen UwU</h1>
+        <h1 className="text-3xl font-bold leading-tight">Soffen</h1>
         <h2 className="text-2xl text-pink-500">
           Software Engineer • Web developer
         </h2>
