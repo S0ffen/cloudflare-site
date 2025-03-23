@@ -4,14 +4,14 @@ const Hero: React.FC = () => {
   return (
     <section
       id="about"
-      className="min-h-screen flex flex-col md:flex-row items-center justify-center md:justify-between px-6 md:px-20 bg-gradient-to-br from-gray-900 to-black text-white"
+      className="min-h-screen flex flex-col md:flex-row items-center justify-center md:justify-between px-6 md:px-20 "
     >
       {/* Lewa strona - tekst */}
       <div className="w-full md:w-[50%] lg:w-[55%] text-center md:text-left space-y-4">
         <p className="text-lg text-gray-400">Hello! I am</p>
-        <h1 className="text-6xl font-bold leading-tight">Your Name</h1>
+        <h1 className="text-3xl font-bold leading-tight">Soffen UwU</h1>
         <h2 className="text-2xl text-pink-500">
-          Software Engineer • UI/UX Designer
+          Software Engineer • Web developer
         </h2>
         <p className="text-gray-300 max-w-xl">
           I'm a passionate Software Engineer focused on building beautiful and
@@ -23,7 +23,7 @@ const Hero: React.FC = () => {
         <motion.a
           href="/resume.pdf"
           className="inline-block border-2 border-pink-500 text-pink-500 px-6 py-3 text-lg font-bold rounded-md hover:bg-pink-500 hover:text-white transition-all"
-          whileHover={{ scale: 1.05 }}
+          whileHover={{ scale: 1.1 }}
         >
           Get my resume
         </motion.a>

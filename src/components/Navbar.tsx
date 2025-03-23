@@ -20,7 +20,9 @@ const Navbar: React.FC = () => {
   return (
     <nav
       className={`fixed w-full top-0 z-50 p-4 shadow-md ${
-        darkMode ? "bg-gray-900 text-white" : "bg-white text-gray-900"
+        darkMode
+          ? "bg-gradient-to-l from-[#880e65] to-[#0a0324ce] text-[#f1f5f9]"
+          : "bg-gradient-to-l from-[#0a0324ce] to-[#880e65] text-[#f1f5f9]"
       }`}
     >
       <div className="container mx-auto flex justify-between items-center">
