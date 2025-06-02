@@ -50,14 +50,14 @@ const Contact: React.FC = () => {
       <div className="flex flex-wrap justify-center items-center gap-8 text-lg text-white font-light">
         <FaMailBulk />
         <a
-          href="mailto:you@example.com"
+          href="mailto:adrian.tetlak@gmail.com"
           className="hover:text-pink-500 transition"
         >
           Email
         </a>
         <FaGithub />
         <a
-          href="https://github.com/yourusername"
+          href="https://github.com/S0ffen"
           target="_blank"
           className="hover:text-pink-500 transition"
         >

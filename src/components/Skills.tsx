@@ -1,16 +1,14 @@
 const skills = {
   "Front End": [
     "HTML",
+    "CSS",
     "JavaScript",
     "TypeScript",
     "React",
     "Bootstrap",
     "Tailwind",
     "Blazor",
-    "xxxx",
-    "xxxx",
-    "xxxx",
-    "xxxx",
+    "Vite",
   ],
   Backend: [
     "Node",
@@ -18,26 +16,19 @@ const skills = {
     "Blazor",
     ".NET",
     "C#",
-    "Figma",
-    "Styled-Components",
+    "PostgreSQL",
+    "Express",
+    "Next.js",
+    "Rest API",
+    "Firebase",
   ],
-  Miscellaneous: [
-    "Git",
-    "xxx",
-    "Cypress",
-    "xxxx",
-    "xxxx",
-    "xxxx",
-    "xxxx",
-    "xxxx",
-  ],
+  Miscellaneous: ["Github", "Highcharts", "Cypress", "Docker", "DevExpress"],
 };
-6;
 
 const Skills: React.FC = () => {
   return (
     <section id="skills" className="py-16 px-6">
-      <h2 className="text-5xl font-light mb-12">Skills</h2>
+      <h2 className="text-5xl font-light mb-12 text-center">Skills</h2>
 
       <div className="space-y-12 max-w-6xl mx-auto text-left">
         {Object.entries(skills).map(([category, items]) => (
