@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 const About: React.FC = () => {
   return (
     <section id="about" className="py-16 px-6 text-white text-center">
@@ -5,40 +6,62 @@ const About: React.FC = () => {
 
       <div className="flex flex-col md:flex-row justify-center items-start gap-10 md:gap-16 max-w-7xl mx-auto">
         {/* Past */}
-        <div className="w-full md:w-1/3">
+        <motion.div
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.3 }}
+          viewport={{ once: true }}
+          className="w-full md:w-1/3"
+        >
           <h3 className="text-2xl text-pink-500 mb-4">Past</h3>
           <p className="text-lg text-gray-300 max-w-md mx-auto">
-            I discovered my passion for programming when I was just 14 years
-            old. At first, it was just a hobby, but I quickly became interested
-            in web development and the creative possibilities it offered. Over
-            the years, I continued to develop my skills and fell more in love
-            with building websites.
+            I first discovered programming at 16 — it started as a hobby, but
+            quickly turned into a passion. The ability to build something from
+            nothing using just code captivated me early on. Over time, I
+            sharpened my skills by building websites, experimenting with
+            different technologies, and pushing myself to solve increasingly
+            complex problems.
           </p>
-        </div>
-
+        </motion.div>
         {/* Present */}
-        <div className="w-full md:w-1/3">
+        <motion.div
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.6 }}
+          viewport={{ once: true }}
+          className="w-full md:w-1/3"
+        >
           <h3 className="text-2xl text-pink-500 mb-4">Present</h3>
           <p className="text-lg text-gray-300 max-w-md mx-auto">
-            Currently, I am a software engineering and a Software Development
-            Engineer, gaining valuable experience in a professional setting. I
-            am currently working with Blazor in C# and .NET, developing building
-            management systems (BMS) for heat pumps and other applications.In
-            free time i also build open source projects and continuously improve
-            my frontend skills and backend skills in Javascript.
+            Nowadays, I’m working as a Software Engineer, focusing on the
+            development of Building Management Systems (BMS) for applications
+            like heat pump control and building automation. My daily stack
+            includes C#, Blazor, Javascript, .NET, PostreSQL, MQTT — while on
+            the frontend, I continuously improve my skills with React, Next.js,
+            Javascript and Typescript. I actively contribute to internal tools
+            and open-source side projects, always aiming to deliver clean,
+            scalable, and maintainable code.
           </p>
-        </div>
+        </motion.div>
 
         {/* Future */}
-        <div className="w-full md:w-1/3">
+        <motion.div
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.9 }}
+          viewport={{ once: true }}
+          className="w-full md:w-1/3"
+        >
           <h3 className="text-2xl text-pink-500 mb-4">Future</h3>
           <p className="text-lg text-gray-300 max-w-md mx-auto">
-            Looking ahead, I’m excited about the future of programming and the
-            endless opportunities it presents. I’m confident that my passion and
-            skills will allow me to make meaningful contributions to the
-            industry in the years to come.
+            I’m driven by constant learning and challenges that push me out of
+            my comfort zone. Looking ahead, I see myself deepening my expertise
+            in full-stack development, exploring cloud-native systems, and
+            contributing to products that solve real-world problems. My goal is
+            simple: to create software that’s not just functional, but
+            impactful.
           </p>
-        </div>
+        </motion.div>
       </div>
     </section>
   );
