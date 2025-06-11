@@ -36,8 +36,8 @@ const About: React.FC = () => {
             Nowadays, I’m working as a Fullstack Developer, focusing on the
             development of Building Management Systems (BMS) for applications
             like heat pump control and building automation. My daily stack
-            includes C#, Blazor, Javascript, .NET, PostreSQL, MQTT — while on
-            the frontend, I continuously improve my skills with React, Next.js,
+            includes C#, Blazor, Javascript, .NET, PostreSQL, MQTT — on my free
+            time, I continuously improve my skills with React, Next.js,
             Javascript and Typescript. I actively contribute to internal tools
             and open-source side projects, always aiming to deliver clean,
             scalable, and maintainable code.
