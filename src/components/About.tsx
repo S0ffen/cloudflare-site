@@ -33,7 +33,7 @@ const About: React.FC = () => {
         >
           <h3 className="text-2xl text-pink-500 mb-4">Present</h3>
           <p className="text-lg text-gray-300 max-w-md mx-auto">
-            Nowadays, I’m working as a Software Engineer, focusing on the
+            Nowadays, I’m working as a Fullstack Developer, focusing on the
             development of Building Management Systems (BMS) for applications
             like heat pump control and building automation. My daily stack
             includes C#, Blazor, Javascript, .NET, PostreSQL, MQTT — while on

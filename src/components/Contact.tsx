@@ -1,4 +1,5 @@
 import { FaFilePdf, FaGithub, FaLinkedin, FaMailBulk } from "react-icons/fa";
+import { motion } from "framer-motion";
 
 const Contact: React.FC = () => {
   return (
@@ -8,7 +9,13 @@ const Contact: React.FC = () => {
       {/* Sekcje kontaktowe */}
       <div className="flex flex-col md:flex-row justify-center items-start gap-10 md:gap-16 max-w-7xl mx-auto mb-12">
         {/* Job Opportunity */}
-        <div className="w-full md:w-1/3 space-y-4">
+        <motion.div
+          initial={{ opacity: 0, y: 80 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.3 }}
+          viewport={{ once: true }}
+          className="w-full md:w-1/3 space-y-4"
+        >
           <h3 className="text-2xl text-pink-500 font-medium">
             offer job opportunity?
           </h3>
@@ -19,10 +26,16 @@ const Contact: React.FC = () => {
             exciting and challenging projects. If you have a project or role in
             mind, feel free to reach out and let’s discuss!
           </p>
-        </div>
+        </motion.div>
 
         {/* Connect */}
-        <div className="w-full md:w-1/3 space-y-4">
+        <motion.div
+          initial={{ opacity: 0, y: 80 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.3 }}
+          viewport={{ once: true }}
+          className="w-full md:w-1/3 space-y-4"
+        >
           <h3 className="text-2xl text-pink-500 font-medium">Connect?</h3>
           <p className="text-gray-300 text-base leading-relaxed max-w-xs mx-auto">
             Networking is key in the tech industry, and I’m always looking to
@@ -30,10 +43,16 @@ const Contact: React.FC = () => {
             fellow developer, designer, or entrepreneur, I’d love to chat and
             learn more about your work.
           </p>
-        </div>
+        </motion.div>
 
         {/* Build something */}
-        <div className="w-full md:w-1/3 space-y-4">
+        <motion.div
+          initial={{ opacity: 0, y: 80 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.3 }}
+          viewport={{ once: true }}
+          className="w-full md:w-1/3 space-y-4"
+        >
           <h3 className="text-2xl text-pink-500 font-medium">
             Build something?
           </h3>
@@ -43,7 +62,7 @@ const Contact: React.FC = () => {
             platform or a cutting-edge app, I’m always ready for a challenge.
             Let’s create something amazing together!
           </p>
-        </div>
+        </motion.div>
       </div>
 
       {/* Linki social */}

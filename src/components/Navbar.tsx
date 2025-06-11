@@ -3,10 +3,8 @@ import { motion } from "framer-motion";
 import { FaMoon, FaSun } from "react-icons/fa";
 
 const Navbar: React.FC = () => {
-  const [darkMode, setDarkMode] = useState(true);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
-  const toggleDarkMode = () => setDarkMode(!darkMode);
   const toggleMobileMenu = () => setMobileMenuOpen(!mobileMenuOpen);
 
   // Funkcja do płynnego przewijania do sekcji
@@ -19,11 +17,8 @@ const Navbar: React.FC = () => {
 
   return (
     <nav
-      className={`fixed w-full top-0 z-50 p-4 shadow-md ${
-        darkMode
-          ? "bg-gradient-to-l from-[#880e65] to-[#0a0324ce] text-[#f1f5f9]"
-          : "bg-gradient-to-l from-[#0a0324ce] to-[#880e65] text-[#f1f5f9]"
-      }`}
+      className={`fixed w-full top-0 z-50 p-4 shadow-md bg-gradient-to-l from-[#880e65] to-[#0a0324ce] text-[#f1f5f9]
+      `}
     >
       <div className="container mx-auto flex justify-between items-center">
         {/* LOGO */}
@@ -50,11 +45,6 @@ const Navbar: React.FC = () => {
             )
           )}
         </ul>
-
-        {/* Tryb ciemny/jasny */}
-        <button onClick={toggleDarkMode} className="hidden md:block text-xl">
-          {darkMode ? <FaSun className="text-yellow-400" /> : <FaMoon />}
-        </button>
 
         {/* Hamburger menu (Mobile) */}
         <div className="md:hidden flex items-center">
