@@ -6,7 +6,7 @@ const Projects: React.FC = () => {
     <section id="projects" className="py-20 px-6">
       <h2 className="text-5xl font-light text-center mb-16">Projects</h2>
 
-      {/* Projekt pojedynczy */}
+      {/* Pierwszy projekt */}
       <motion.div
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -21,7 +21,7 @@ const Projects: React.FC = () => {
             <img
               src="/logo.png" // <- podmień na własny obraz
               alt="Project thumbnail"
-              className="w-lg h-80 object-cover"
+              className="w-lg h-100 object-cover"
             />
           </div>
         </div>
@@ -54,38 +54,47 @@ const Projects: React.FC = () => {
         </div>
       </motion.div>
 
-      {/* Kolejny projekt */}
-      <div className="flex flex-col lg:flex-row items-start gap-12 max-w-7xl mx-auto">
+      {/* Drugi projekt */}
+      <motion.div
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6, delay: 0.3 }}
+        viewport={{ once: true }}
+        className="flex flex-col lg:flex-row items-start gap-12 max-w-7xl mx-auto m-16"
+      >
         {/* Lewa strona: obrazek z efektem neonowym */}
         <div className="relative w-full lg:w-1/2 flex justify-center">
           <div className="absolute w-72 h-48 bg-pink-500 opacity-30 blur-3xl rounded-lg"></div>
           <div className="relative border-4 border-pink-500 rounded-lg overflow-hidden shadow-lg">
             <img
-              src="/logo.png" // <- podmień na własny obraz
+              src="/BudgetApp.png" // <- podmień na własny obraz
               alt="Project thumbnail"
-              className="w-72 h-48 object-cover"
+              className="w-lg h-100 object-cover"
             />
           </div>
         </div>
 
         {/* Prawa strona: opis */}
         <div className="w-full lg:w-1/2 space-y-4">
-          <h3 className="text-3xl font-semibold">NosApp</h3>
+          <h3 className="text-3xl font-semibold">BudgetApp</h3>
           <p className="text-sm text-gray-400">
             Made with:{" "}
             <span className="text-pink-500">
-              TypeScript Next.JS Vercel TailwindCSS React Firebase
+              TypeScript React Next.JS Vercel TailwindCSS
             </span>
           </p>
           <p className="text-gray-300 leading-relaxed">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
-            bibendum lorem a suscipit cursus. This is where you explain your
-            project in 2–4 sentences.
+            BudgetApp to przejrzysta aplikacja webowa stworzona w Next.js +
+            TypeScript, umożliwiająca śledzenie wydatków w formie list
+            transakcji z podziałem na użytkowników i kategorie. Wbudowane demo
+            pozwala użytkownikowi przetestować funkcjonalności bez logowania.
+            Dane są tymczasowo przechowywane w localStorage, a interfejs oparty
+            jest o Tailwind CSS i animacje z Framer Motion.
           </p>
 
           {/* Link do projektu */}
           <a
-            href="https://nostale-app.vercel.app/login"
+            href="https://budgeting-pi.vercel.app/demo"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 border-2 border-pink-500 text-pink-500 px-4 py-2 font-semibold rounded-md hover:bg-pink-500 hover:text-white transition"
@@ -94,7 +103,7 @@ const Projects: React.FC = () => {
             Live
           </a>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 };
