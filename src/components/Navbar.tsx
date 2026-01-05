@@ -20,34 +20,34 @@ const Navbar: React.FC = () => {
       className={`fixed w-full top-0 z-50 p-4 shadow-md bg-gradient-to-l from-[#880e65] to-[#0a0324ce] text-[#f1f5f9]
       `}
     >
-      <div className="container mx-auto flex justify-between items-center">
-        {/* LOGO */}
+      <div className="mr-15 ml-15 flex items-center justify-between">
+        {/* LEFT - logo */}
         <motion.h1
           className="text-2xl font-bold cursor-pointer"
           initial={{ opacity: 0, y: -10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
+          onClick={() => scrollToSection("home")}
         >
-          XXXXX XXXXX
+          Adrian Tetłak
         </motion.h1>
-        {/* MENU - Desktop */}
-        <ul className="hidden md:flex space-x-8 text-lg mx-auto">
-          {["About", "Skills", "Projects", "Contact", "Resume"].map(
-            (item, i) => (
-              <motion.li
-                key={i}
-                className="cursor-pointer hover:text-pink-400 transition-all"
-                whileHover={{ scale: 1.1 }}
-                onClick={() => scrollToSection(item.toLowerCase())} // Przenosi do sekcji
-              >
-                {item}
-              </motion.li>
-            )
-          )}
+
+        {/* RIGHT - desktop menu */}
+        <ul className="hidden md:flex gap-8 text-sm tracking-widest uppercase">
+          {["About", "Skills", "Projects", "Contact", "Resume"].map((item) => (
+            <motion.li
+              key={item}
+              className="cursor-pointer hover:text-pink-400 transition-all"
+              whileHover={{ scale: 1.05 }}
+              onClick={() => scrollToSection(item.toLowerCase())}
+            >
+              {item}
+            </motion.li>
+          ))}
         </ul>
 
         {/* Hamburger menu (Mobile) */}
-        <div className="md:hidden flex items-center">
+        <div className="md:hidden flex items-center ml-auto">
           <button onClick={toggleMobileMenu} className="text-2xl">
             ☰
           </button>

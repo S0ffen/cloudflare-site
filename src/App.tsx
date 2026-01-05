@@ -9,15 +9,18 @@ const App: React.FC = () => {
   return (
     <div className="bg-gradient-to-tr from-[#13073fce] to-[#5a0a43] text-[#f1f5f9] min-h-screen">
       <Navbar />
-      <Hero />
       <section id="about">
+        <Hero />
         <About />
+        <div className="mt-16 h-px w-full  bg-gradient-to-r from-transparent via-white/25 to-transparent" />
       </section>
       <section id="skills">
         <Skills />
+        <div className="mt-16 h-px w-full bg-gradient-to-r from-transparent via-white/25 to-transparent" />
       </section>
       <section id="projects">
         <Projects />
+        <div className="mt-16 h-px w-full bg-gradient-to-r from-transparent via-white/25 to-transparent" />
       </section>
       <section id="contact">
         <Contact />

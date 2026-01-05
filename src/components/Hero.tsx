@@ -2,10 +2,7 @@ import { motion } from "framer-motion";
 
 const Hero: React.FC = () => {
   return (
-    <section
-      id="about"
-      className="min-h-screen flex flex-col md:flex-row items-center justify-center md:justify-center gap-x-10 px-6 md:px-20"
-    >
+    <section className="min-h-screen flex flex-col md:flex-row items-center justify-center md:justify-center gap-x-10 px-6 md:px-20">
       {/* Lewa strona - tekst */}
       <motion.div
         initial={{ opacity: 0, y: 40 }}
@@ -19,7 +16,7 @@ const Hero: React.FC = () => {
         </p>
 
         <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight">
-          Soffen
+          Adrian Tetłak
         </h1>
 
         <h2 className="text-xl sm:text-2xl lg:text-3xl text-pink-500">
