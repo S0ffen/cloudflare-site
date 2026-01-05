@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 const Hero: React.FC = () => {
   return (
-    <section className="min-h-screen flex flex-col md:flex-row items-center justify-center md:justify-center gap-x-10 px-6 md:px-20">
+    <section className="min-h-screen flex flex-col md:flex-row items-center justify-center md:justify-center gap-x-10 px-6 md:px-32">
       {/* Lewa strona - tekst */}
       <motion.div
         initial={{ opacity: 0, y: 40 }}
@@ -15,7 +15,7 @@ const Hero: React.FC = () => {
           Hello! I am
         </p>
 
-        <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight">
+        <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight text-[#F5F7FA]">
           Adrian Tetłak
         </h1>
 
@@ -23,15 +23,13 @@ const Hero: React.FC = () => {
           Fullstack Developer • Web developer
         </h2>
 
-        <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-300 max-w-4xl mx-auto md:mx-0 ">
+        <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-200 max-w-4xl mx-auto md:mx-0 ">
           I’m a software engineer with a degree in programming, working daily on
           the development of Building Management Systems (BMS) using tools like
           DevExpress, Blazor, C#, PostgreSQL, Javascript, and .NET. In my free
           time, I focus on creating modern web applications with React, Next.js,
           and Node.js — exploring new technologies, improving performance, and
-          building clean user experiences. Below you’ll find a selection of my
-          personal projects — each one a reflection of my skills, curiosity, and
-          passion for web development.
+          building clean user experiences.
         </p>
 
         <motion.a

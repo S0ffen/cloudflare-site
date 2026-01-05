@@ -7,7 +7,7 @@ import Contact from "./components/Contact";
 
 const App: React.FC = () => {
   return (
-    <div className="bg-gradient-to-tr from-[#13073fce] to-[#5a0a43] text-[#f1f5f9] min-h-screen">
+    <div className="bg-[#0f0826] min-h-screen">
       <Navbar />
       <section id="about">
         <Hero />

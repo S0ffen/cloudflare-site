@@ -19,7 +19,7 @@ const Contact: React.FC = () => {
           <h3 className="text-2xl text-pink-500 font-medium">
             offer job opportunity?
           </h3>
-          <p className="text-gray-300 text-base leading-relaxed max-w-xs mx-auto">
+          <p className="text-gray-200 text-base leading-relaxed max-w-xs mx-auto">
             I am open to discussing potential job opportunities or
             collaborations. With experience in web development and software
             engineering, I am interested in roles that allow me to work on
@@ -37,7 +37,7 @@ const Contact: React.FC = () => {
           className="w-full md:w-1/3 space-y-4"
         >
           <h3 className="text-2xl text-pink-500 font-medium">Connect?</h3>
-          <p className="text-gray-300 text-base leading-relaxed max-w-xs mx-auto">
+          <p className="text-gray-200 text-base leading-relaxed max-w-xs mx-auto">
             Networking is key in the tech industry, and I’m always looking to
             meet new people and expand my professional circle. Whether you’re a
             fellow developer, designer, or entrepreneur, I’d love to chat and
@@ -56,7 +56,7 @@ const Contact: React.FC = () => {
           <h3 className="text-2xl text-pink-500 font-medium">
             Build something?
           </h3>
-          <p className="text-gray-300 text-base leading-relaxed max-w-xs mx-auto">
+          <p className="text-gray-200 text-base leading-relaxed max-w-xs mx-auto">
             I have a passion for developing innovative web applications that
             solve complex problems. Whether it’s building a custom e-commerce
             platform or a cutting-edge app, I’m always ready for a challenge.

@@ -31,7 +31,9 @@ const skills = {
 const Skills: React.FC = () => {
   return (
     <section id="skills" className="py-16 px-6">
-      <h2 className="text-5xl font-light mb-12 text-center">Skills</h2>
+      <h2 className="text-5xl font-light mb-12 text-center text-[#F5F7FA]">
+        Skills
+      </h2>
 
       <div className="space-y-12 max-w-7xl mx-auto text-left">
         {Object.entries(skills).map(([category, items]) => (

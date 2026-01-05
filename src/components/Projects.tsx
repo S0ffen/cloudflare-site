@@ -13,7 +13,9 @@ import { motion } from "framer-motion";
 const Projects: React.FC = () => {
   return (
     <section id="projects" className="py-20 px-6">
-      <h2 className="text-5xl font-light text-center mb-16">Projects</h2>
+      <h2 className="text-5xl font-light text-center mb-16 text-[#F5F7FA]">
+        Projects
+      </h2>
 
       {/* Pierwszy projekt */}
       <motion.div
@@ -37,14 +39,14 @@ const Projects: React.FC = () => {
 
         {/* Prawa strona: opis */}
         <div className="w-full lg:w-1/2 space-y-4">
-          <h3 className="text-3xl font-semibold">BudgetApp</h3>
+          <h3 className="text-3xl font-semibold text-[#F5F7FA]">BudgetApp</h3>
           <p className="text-sm text-gray-400">
             Made with:{" "}
             <span className="text-pink-500">
               TypeScript React Next.JS Vercel TailwindCSS
             </span>
           </p>
-          <p className="text-gray-300 leading-relaxed">
+          <p className="text-gray-200 leading-relaxed">
             BudgetApp to przejrzysta aplikacja webowa stworzona w Next.js +
             TypeScript, umożliwiająca śledzenie wydatków w formie list
             transakcji z podziałem na użytkowników i kategorie. Wbudowane demo
@@ -87,7 +89,7 @@ const Projects: React.FC = () => {
 
         {/* Prawa strona: opis */}
         <div className="w-full lg:w-1/2 space-y-4">
-          <h3 className="text-xl font-semibold">Cat & Facts</h3>
+          <h3 className="text-3xl font-semibold text-[#F5F7FA]">Cat & Facts</h3>
           <p className="text-sm text-gray-400 flex flex-wrap items-center gap-2">
             Made with:
             <span className="flex flex-wrap items-center gap-2 text-pink-500">
@@ -107,7 +109,7 @@ const Projects: React.FC = () => {
               Vercel
             </span>
           </p>
-          <p className="text-gray-300 leading-relaxed">
+          <p className="text-gray-200 leading-relaxed">
             Cat Generator is a clean, responsive web app built with Next.js and
             TypeScript. It fetches random cat images and fun facts using a
             custom REST API, with optional breed filtering. The interface is

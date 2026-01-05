@@ -14,7 +14,7 @@ const About: React.FC = () => {
           className="w-full md:w-1/3"
         >
           <h3 className="text-2xl text-pink-500 mb-4">Past</h3>
-          <p className="text-lg text-gray-300 max-w-md mx-auto">
+          <p className="text-lg text-white/80 max-w-md mx-auto">
             I first discovered programming at 16 — it started as a hobby, but
             quickly turned into a passion. The ability to build something from
             nothing using just code captivated me early on. Over time, I
@@ -32,7 +32,7 @@ const About: React.FC = () => {
           className="w-full md:w-1/3"
         >
           <h3 className="text-2xl text-pink-500 mb-4">Present</h3>
-          <p className="text-lg text-gray-300 max-w-md mx-auto">
+          <p className="text-lg text-white max-w-md mx-auto">
             Nowadays, I’m working as a Fullstack Developer, focusing on the
             development of Building Management Systems (BMS) for applications
             like heat pump control and building automation. My daily stack
@@ -53,7 +53,7 @@ const About: React.FC = () => {
           className="w-full md:w-1/3"
         >
           <h3 className="text-2xl text-pink-500 mb-4">Future</h3>
-          <p className="text-lg text-gray-300 max-w-md mx-auto">
+          <p className="text-lg text-white/80 max-w-md mx-auto">
             I’m driven by constant learning and challenges that push me out of
             my comfort zone. Looking ahead, I see myself deepening my expertise
             in full-stack development, exploring cloud-native systems, and

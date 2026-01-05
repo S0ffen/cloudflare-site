@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { FaMoon, FaSun } from "react-icons/fa";
 
 const Navbar: React.FC = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -17,7 +16,9 @@ const Navbar: React.FC = () => {
 
   return (
     <nav
-      className={`fixed w-full top-0 z-50 p-4 shadow-md bg-gradient-to-l from-[#880e65] to-[#0a0324ce] text-[#f1f5f9]
+      className={`fixed w-full top-0 z-50 p-4   bg-[#140826]/70 backdrop-blur-md
+    border-b border-white/20
+    text-[#F5F7FA]
       `}
     >
       <div className="mr-15 ml-15 flex items-center justify-between">
