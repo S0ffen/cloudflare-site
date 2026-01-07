@@ -1,6 +1,8 @@
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 const Hero: React.FC = () => {
+  const { t } = useTranslation();
   return (
     <section className="min-h-screen flex flex-col md:flex-row items-center justify-center md:justify-center gap-x-10 px-6 md:px-32">
       {/* Lewa strona - tekst */}
@@ -12,7 +14,8 @@ const Hero: React.FC = () => {
         className="w-full md:w-[50%] lg:w-[55%] text-center md:text-left space-y-4"
       >
         <p className="text-sm md:text-base lg:text-lg text-gray-400">
-          Hello! I am
+          {/* Hello! I am */}
+          {t("hero.hello")}
         </p>
 
         <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight text-[#F5F7FA]">
@@ -24,12 +27,13 @@ const Hero: React.FC = () => {
         </h2>
 
         <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-200 max-w-4xl mx-auto md:mx-0 ">
-          I’m a software engineer with a degree in programming, working daily on
+          {/* I’m a software engineer with a degree in programming, working daily on
           the development of Building Management Systems (BMS) using tools like
           DevExpress, Blazor, C#, PostgreSQL, Javascript, and .NET. In my free
           time, I focus on creating modern web applications with React, Next.js,
           and Node.js — exploring new technologies, improving performance, and
-          building clean user experiences.
+          building clean user experiences. */}
+          {t("hero.description")}
         </p>
 
         <motion.a
@@ -37,7 +41,8 @@ const Hero: React.FC = () => {
           className="inline-block border-2 border-pink-500 text-pink-500 px-6 py-3 text-base md:text-lg font-bold rounded-md hover:bg-pink-500 hover:text-white transition-all"
           whileHover={{ scale: 1.1 }}
         >
-          Get my resume
+          {/* Get my resume */}
+          {t("hero.button")}
         </motion.a>
       </motion.div>
 

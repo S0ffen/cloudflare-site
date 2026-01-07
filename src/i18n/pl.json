@@ -1,0 +1,14 @@
+{
+  "nav": {
+    "about": "O mnie",
+    "skills": "Umiejętności",
+    "projects": "Projekty",
+    "contact": "Kontakt",
+    "resume": "CV"
+  },
+  "hero": {
+    "hello": "Cześć! Jestem",
+    "description": "Jestem programistą z wykształceniem inżynierskim, pracującym na co dzień nad rozwojem systemów zarządzania budynkami (BMS) z wykorzystaniem narzędzi takich jak DevExpress, Blazor, C#, PostgreSQL, Javascript i .NET. W wolnym czasie skupiam się na tworzeniu nowoczesnych aplikacji internetowych z wykorzystaniem React, Next.js i Node.js.",
+    "button": "Pobierz moje CV"
+  }
+}

@@ -1,10 +1,12 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 const Navbar: React.FC = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-
   const toggleMobileMenu = () => setMobileMenuOpen(!mobileMenuOpen);
+
+  const { t, i18n } = useTranslation();
 
   // Funkcja do płynnego przewijania do sekcji
   const scrollToSection = (id: string) => {
@@ -79,6 +81,11 @@ const Navbar: React.FC = () => {
           )}
         </motion.ul>
       )}
+      <li>{t("nav.about")}</li>
+      <li>{t("nav.skills")}</li>
+
+      <button onClick={() => i18n.changeLanguage("pl")}>PL</button>
+      <button onClick={() => i18n.changeLanguage("en")}>EN</button>
     </nav>
   );
 };

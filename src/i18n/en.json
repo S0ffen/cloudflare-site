@@ -1,0 +1,14 @@
+{
+  "nav": {
+    "about": "About",
+    "skills": "Skills",
+    "projects": "Projects",
+    "contact": "Contact",
+    "resume": "Resume"
+  },
+  "hero": {
+    "hello": "Hello! I am",
+    "description": "I’m a software engineer with a degree in programming, working daily on the development of Building Management Systems (BMS) using tools like DevExpress, Blazor, C#, PostgreSQL, Javascript, and .NET. In my free time, I focus on creating modern web applications with React, Next.js, and Node.js.",
+    "button": "Get my resume"
+  }
+}
