@@ -8,6 +8,8 @@ const Navbar: React.FC = () => {
 
   const { t, i18n } = useTranslation();
 
+  const navKeys = ["about", "skills", "projects", "contact", "resume"];
+
   // Funkcja do płynnego przewijania do sekcji
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
@@ -37,16 +39,30 @@ const Navbar: React.FC = () => {
 
         {/* RIGHT - desktop menu */}
         <ul className="hidden md:flex gap-8 text-sm tracking-widest uppercase">
-          {["About", "Skills", "Projects", "Contact", "Resume"].map((item) => (
+          {navKeys.map((key) => (
             <motion.li
-              key={item}
+              key={key}
               className="cursor-pointer hover:text-pink-400 transition-all"
               whileHover={{ scale: 1.05 }}
-              onClick={() => scrollToSection(item.toLowerCase())}
+              onClick={() => scrollToSection(key)}
             >
-              {item}
+              {t(`nav.${key}`)}
             </motion.li>
           ))}
+          <li className="ml-4 flex items-center gap-2">
+            <button
+              className="text-sm px-2 py-1 hover:text-pink-400"
+              onClick={() => i18n.changeLanguage("pl")}
+            >
+              PL
+            </button>
+            <button
+              className="text-sm px-2 py-1 hover:text-pink-400"
+              onClick={() => i18n.changeLanguage("en")}
+            >
+              EN
+            </button>
+          </li>
         </ul>
 
         {/* Hamburger menu (Mobile) */}
@@ -65,27 +81,34 @@ const Navbar: React.FC = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.3 }}
         >
-          {["About", "Skills", "Projects", "Contact", "Resume"].map(
-            (item, i) => (
-              <li
-                key={i}
-                className="cursor-pointer hover:text-pink-400 transition-all"
-                onClick={() => {
-                  scrollToSection(item.toLowerCase());
-                  setMobileMenuOpen(false); // Zamknij menu na mobile po kliknięciu
-                }}
-              >
-                {item}
-              </li>
-            )
-          )}
+          {navKeys.map((key, i) => (
+            <li
+              key={i}
+              className="cursor-pointer hover:text-pink-400 transition-all"
+              onClick={() => {
+                scrollToSection(key);
+                setMobileMenuOpen(false); // Zamknij menu na mobile po kliknięciu
+              }}
+            >
+              {t(`nav.${key}`)}
+            </li>
+          ))}
+          <li className="pt-2 flex gap-2">
+            <button
+              className="text-sm px-2 py-1 hover:text-pink-400"
+              onClick={() => i18n.changeLanguage("pl")}
+            >
+              PL
+            </button>
+            <button
+              className="text-sm px-2 py-1 hover:text-pink-400"
+              onClick={() => i18n.changeLanguage("en")}
+            >
+              EN
+            </button>
+          </li>
         </motion.ul>
       )}
-      <li>{t("nav.about")}</li>
-      <li>{t("nav.skills")}</li>
-
-      <button onClick={() => i18n.changeLanguage("pl")}>PL</button>
-      <button onClick={() => i18n.changeLanguage("en")}>EN</button>
     </nav>
   );
 };

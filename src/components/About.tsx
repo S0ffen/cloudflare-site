@@ -1,8 +1,10 @@
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 const About: React.FC = () => {
+  const { t } = useTranslation();
   return (
     <section id="about" className="py-16 px-6 text-white text-center">
-      <h2 className="text-5xl font-light mb-12">About My</h2>
+      <h2 className="text-5xl font-light mb-12">{t("about.heading")}</h2>
 
       <div className="flex flex-col md:flex-row justify-center items-start gap-10 md:gap-16 max-w-7xl mx-auto">
         {/* Past */}
@@ -13,14 +15,17 @@ const About: React.FC = () => {
           viewport={{ once: true }}
           className="w-full md:w-1/3"
         >
-          <h3 className="text-2xl text-pink-500 mb-4">Past</h3>
+          <h3 className="text-2xl text-pink-500 mb-4">
+            {t("about.past.title")}
+          </h3>
           <p className="text-lg text-white/80 max-w-md mx-auto">
-            I first discovered programming at 16 — it started as a hobby, but
+            {/* I first discovered programming at 16 — it started as a hobby, but
             quickly turned into a passion. The ability to build something from
             nothing using just code captivated me early on. Over time, I
             sharpened my skills by building websites, experimenting with
             different technologies, and pushing myself to solve increasingly
-            complex problems.
+            complex problems. */}
+            {t("about.past.text")}
           </p>
         </motion.div>
         {/* Present */}
@@ -31,16 +36,19 @@ const About: React.FC = () => {
           viewport={{ once: true }}
           className="w-full md:w-1/3"
         >
-          <h3 className="text-2xl text-pink-500 mb-4">Present</h3>
+          <h3 className="text-2xl text-pink-500 mb-4">
+            {t("about.present.title")}
+          </h3>
           <p className="text-lg text-white max-w-md mx-auto">
-            Nowadays, I’m working as a Fullstack Developer, focusing on the
+            {/* Nowadays, I’m working as a Fullstack Developer, focusing on the
             development of Building Management Systems (BMS) for applications
             like heat pump control and building automation. My daily stack
             includes C#, Blazor, Javascript, .NET, PostreSQL, MQTT — on my free
             time, I continuously improve my skills with React, Next.js,
             Javascript and Typescript. I actively contribute to internal tools
             and open-source side projects, always aiming to deliver clean,
-            scalable, and maintainable code.
+            scalable, and maintainable code. */}
+            {t("about.present.text")}
           </p>
         </motion.div>
 
@@ -52,14 +60,17 @@ const About: React.FC = () => {
           viewport={{ once: true }}
           className="w-full md:w-1/3"
         >
-          <h3 className="text-2xl text-pink-500 mb-4">Future</h3>
+          <h3 className="text-2xl text-pink-500 mb-4">
+            {t("about.future.title")}
+          </h3>
           <p className="text-lg text-white/80 max-w-md mx-auto">
-            I’m driven by constant learning and challenges that push me out of
+            {/* I’m driven by constant learning and challenges that push me out of
             my comfort zone. Looking ahead, I see myself deepening my expertise
             in full-stack development, exploring cloud-native systems, and
             contributing to products that solve real-world problems. My goal is
             simple: to create software that’s not just functional, but
-            impactful.
+            impactful. */}
+            {t("about.future.text")}
           </p>
         </motion.div>
       </div>

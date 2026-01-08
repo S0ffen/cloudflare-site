@@ -9,12 +9,14 @@ import {
 import { TbApi } from "react-icons/tb"; // Ikonka API (z Tabler Icons)
 import { BiSolidComponent } from "react-icons/bi"; // Motion One jako animacja
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 const Projects: React.FC = () => {
+  const { t } = useTranslation();
   return (
     <section id="projects" className="py-20 px-6">
       <h2 className="text-5xl font-light text-center mb-16 text-[#F5F7FA]">
-        Projects
+        {t("projects.heading")}
       </h2>
 
       {/* Pierwszy projekt */}
@@ -41,18 +43,17 @@ const Projects: React.FC = () => {
         <div className="w-full lg:w-1/2 space-y-4">
           <h3 className="text-3xl font-semibold text-[#F5F7FA]">BudgetApp</h3>
           <p className="text-sm text-gray-400">
-            Made with:{" "}
+            {t("projects.title_desc")}{" "}
             <span className="text-pink-500">
               TypeScript React Next.JS Vercel TailwindCSS
             </span>
           </p>
           <p className="text-gray-200 leading-relaxed">
-            BudgetApp to przejrzysta aplikacja webowa stworzona w Next.js +
+            {/* BudgetApp to przejrzysta aplikacja webowa stworzona w Next.js +
             TypeScript, umożliwiająca śledzenie wydatków w formie list
             transakcji z podziałem na użytkowników i kategorie. Wbudowane demo
-            pozwala użytkownikowi przetestować funkcjonalności bez logowania.
-            Dane są tymczasowo przechowywane w localStorage, a interfejs oparty
-            jest o Tailwind CSS i animacje z Framer Motion.
+            pozwala użytkownikowi przetestować funkcjonalności bez logowania. */}
+            {t("projects.project1.description")}
           </p>
 
           {/* Link do projektu */}
@@ -91,7 +92,7 @@ const Projects: React.FC = () => {
         <div className="w-full lg:w-1/2 space-y-4">
           <h3 className="text-3xl font-semibold text-[#F5F7FA]">Cat & Facts</h3>
           <p className="text-sm text-gray-400 flex flex-wrap items-center gap-2">
-            Made with:
+            {t("projects.title_desc")}{" "}
             <span className="flex flex-wrap items-center gap-2 text-pink-500">
               <SiTypescript title="TypeScript" className="text-[#3178C6]" />
               TypeScript ·
@@ -110,12 +111,13 @@ const Projects: React.FC = () => {
             </span>
           </p>
           <p className="text-gray-200 leading-relaxed">
-            Cat Generator is a clean, responsive web app built with Next.js and
+            {/* Cat Generator is a clean, responsive web app built with Next.js and
             TypeScript. It fetches random cat images and fun facts using a
             custom REST API, with optional breed filtering. The interface is
             styled using Tailwind CSS and enhanced with smooth Motion One
             animations. The project is fully deployed on Vercel and ready to
-            explore — no login required.
+            explore — no login required. */}
+            {t("projects.project2.description")}
           </p>
           {/* Link do projektu */}
           <a

@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 const skills = {
   "Front End": [
@@ -29,10 +30,12 @@ const skills = {
 };
 
 const Skills: React.FC = () => {
+  const { t } = useTranslation();
+
   return (
     <section id="skills" className="py-16 px-6">
       <h2 className="text-5xl font-light mb-12 text-center text-[#F5F7FA]">
-        Skills
+        {t("skills.heading")}
       </h2>
 
       <div className="space-y-12 max-w-7xl mx-auto text-left">

@@ -10,5 +10,34 @@
     "hello": "Hello! I am",
     "description": "I’m a software engineer with a degree in programming, working daily on the development of Building Management Systems (BMS) using tools like DevExpress, Blazor, C#, PostgreSQL, Javascript, and .NET. In my free time, I focus on creating modern web applications with React, Next.js, and Node.js.",
     "button": "Get my resume"
+  },
+
+  "about": {
+    "heading": "About Me",
+    "past": {
+      "title": "Past",
+      "text": "I first discovered programming at 16 — it started as a hobby, but quickly turned into a passion. The ability to build something from nothing using just code captivated me early on. Over time, I sharpened my skills by building websites, experimenting with different technologies, and pushing myself to solve increasingly complex problems."
+    },
+    "present": {
+      "title": "Present",
+      "text": "Nowadays, I’m working as a Fullstack Developer, focusing on the development of Building Management Systems (BMS) for applications like heat pump control and building automation. My daily stack includes C#, Blazor, Javascript, .NET, PostreSQL, MQTT — on my free time, I continuously improve my skills with React, Next.js, Javascript and Typescript. I actively contribute to internal tools and open-source side projects, always aiming to deliver clean, scalable, and maintainable code."
+    },
+    "future": {
+      "title": "Future",
+      "text": "I’m driven by constant learning and challenges that push me out of my comfort zone. Looking ahead, I see myself deepening my expertise in full-stack development, exploring cloud-native systems, and contributing to products that solve real-world problems. My goal is simple: to create software that’s not just functional, but impactful."
+    }
+  },
+  "skills": {
+    "heading": "Skills"
+  },
+  "projects": {
+    "heading": "Projects",
+    "title_desc": "Made With: ",
+    "project1": {
+      "description": "BudgetApp is a clean web app built in Next.js+ TypeScript, providing payouts in a list format interactions by user and category. Built-in demo allows sharing without logging in."
+    },
+    "project2": {
+      "description": "Cat Generator is a clean, responsive web app built with Next.js and TypeScript. It fetches random cat images and fun facts using a custom REST API, with optional breed filtering. The interface is styled using Tailwind CSS and enhanced with smooth Motion One animations. The project is fully deployed on Vercel and ready to explore — no login required."
+    }
   }
 }

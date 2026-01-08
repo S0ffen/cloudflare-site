@@ -10,5 +10,35 @@
     "hello": "Cześć! Jestem",
     "description": "Jestem programistą z wykształceniem inżynierskim, pracującym na co dzień nad rozwojem systemów zarządzania budynkami (BMS) z wykorzystaniem narzędzi takich jak DevExpress, Blazor, C#, PostgreSQL, Javascript i .NET. W wolnym czasie skupiam się na tworzeniu nowoczesnych aplikacji internetowych z wykorzystaniem React, Next.js i Node.js.",
     "button": "Pobierz moje CV"
+  },
+  "about": {
+    "heading": "O mnie",
+    "past": {
+      "title": "Przeszłość",
+      "text": "Odkryłem programowanie w wieku 16 lat — zaczęło się jako hobby, które szybko stało się moją pasją. Możliwość tworzenia czegoś z niczego przy użyciu samego kodu zafascynowała mnie od początku. Z czasem szlifowałem umiejętności, tworząc strony internetowe, eksperymentując z różnymi technologiami i podejmując się coraz bardziej złożonych zadań."
+    },
+    "present": {
+      "title": "Obecnie",
+      "text": "Obecnie pracuję jako Fullstack Developer, koncentrując się na rozwoju systemów zarządzania budynkami (BMS) do takich zastosowań jak sterowanie pompami ciepła i automatyka budynkowa. Mój codzienny stos technologiczny obejmuje C#, Blazor, JavaScript, .NET, PostgreSQL, MQTT — w wolnym czasie nieustannie doskonalę umiejętności w React, Next.js, JavaScript i TypeScript. Aktywnie uczestniczę w tworzeniu wewnętrznych narzędzi i projektów open-source, zawsze dążąc do dostarczania czystego, skalowalnego i łatwego w utrzymaniu kodu."
+    },
+    "future": {
+      "title": "Przyszłość",
+      "text": "Napędza mnie ciągła nauka i wyzwania wyciągające mnie poza strefę komfortu. Patrząc w przyszłość, widzę siebie pogłębiającego wiedzę w full-stack development, eksplorującego systemy cloud-native i przyczyniającego się do tworzenia produktów rozwiązujących rzeczywiste problemy. Moim prostym celem jest tworzenie oprogramowania, które nie tylko działa, ale ma realny wpływ."
+    }
+  },
+  "skills": {
+    "heading": "Umiejętności"
+  },
+  "projects": {
+    "heading": "Projekty",
+    "title_desc": "Zrobione za pomocą:",
+    "project1": {
+      "title": "BudgetApp",
+      "description": "BudgetApp to przejrzysta aplikacja webowa stworzona w Next.js + TypeScript, umożliwiająca śledzenie wydatków w formie list transakcji z podziałem na użytkowników i kategorie. Wbudowane demo pozwala użytkownikowi przetestować funkcjonalności bez logowania."
+    },
+    "project2": {
+      "title": "Cat&Facts",
+      "description": "Cat Generator to przejrzysta, responsywna aplikacja internetowa zbudowana w oparciu o Next.js i TypeScript. Pobiera losowe zdjęcia kotów i ciekawostki za pomocą niestandardowego interfejsu API REST, z opcjonalnym filtrowaniem ras. Interfejs jest stylizowany za pomocą Tailwind CSS i wzbogacony o płynne animacje Motion One. Projekt jest w pełni wdrożony w Vercel i gotowy do eksploracji — nie wymaga logowania."
+    }
   }
 }
