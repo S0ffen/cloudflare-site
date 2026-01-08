@@ -2,11 +2,39 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 
+const FlagPL: React.FC<{ className?: string }> = ({ className }) => (
+  <svg
+    viewBox="0 0 24 16"
+    className={className}
+    aria-hidden="true"
+    focusable="false"
+  >
+    <rect width="24" height="8" y="0" fill="#FFFFFF" />
+    <rect width="24" height="8" y="8" fill="#D52B1E" />
+    <rect
+      width="24"
+      height="16"
+      fill="none"
+      stroke="currentColor"
+      opacity="0.2"
+    />
+  </svg>
+);
+
 const Navbar: React.FC = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const toggleMobileMenu = () => setMobileMenuOpen(!mobileMenuOpen);
 
   const { t, i18n } = useTranslation();
+  const activeLang = i18n.language?.startsWith("pl") ? "pl" : "en";
+  const langButtonClass = (lang: "pl" | "en") =>
+    `inline-flex items-center justify-center gap-1 rounded-md border px-2.5 py-1 text-[11px] font-semibold uppercase tracking-[0.25em] transition
+    focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/40
+    ${
+      activeLang === lang
+        ? "border-white/50 bg-white/20 text-white"
+        : "border-white/20 bg-white/5 text-white/80 hover:border-white/40 hover:bg-white/10 hover:text-pink-300"
+    }`;
 
   const navKeys = ["about", "skills", "projects", "contact", "resume"];
 
@@ -51,15 +79,28 @@ const Navbar: React.FC = () => {
           ))}
           <li className="ml-4 flex items-center gap-2">
             <button
-              className="text-sm px-2 py-1 hover:text-pink-400"
+              className={langButtonClass("pl")}
               onClick={() => i18n.changeLanguage("pl")}
+              aria-pressed={activeLang === "pl"}
+              aria-label="Switch language to Polish"
+              title="Polski"
             >
+              <FlagPL className="h-3 w-4" />
               PL
             </button>
             <button
-              className="text-sm px-2 py-1 hover:text-pink-400"
+              className={langButtonClass("en")}
               onClick={() => i18n.changeLanguage("en")}
+              aria-pressed={activeLang === "en"}
+              aria-label="Switch language to English"
+              title="English"
             >
+              <img
+                src="/flag_EN_big.jpg"
+                className="h-3 w-4 object-cover"
+                alt=""
+                aria-hidden="true"
+              />
               EN
             </button>
           </li>
@@ -95,15 +136,28 @@ const Navbar: React.FC = () => {
           ))}
           <li className="pt-2 flex gap-2">
             <button
-              className="text-sm px-2 py-1 hover:text-pink-400"
+              className={langButtonClass("pl")}
               onClick={() => i18n.changeLanguage("pl")}
+              aria-pressed={activeLang === "pl"}
+              aria-label="Switch language to Polish"
+              title="Polski"
             >
+              <FlagPL className="h-3 w-4" />
               PL
             </button>
             <button
-              className="text-sm px-2 py-1 hover:text-pink-400"
+              className={langButtonClass("en")}
               onClick={() => i18n.changeLanguage("en")}
+              aria-pressed={activeLang === "en"}
+              aria-label="Switch language to English"
+              title="English"
             >
+              <img
+                src="/flag_EN_big.jpg"
+                className="h-3 w-4 object-cover"
+                alt=""
+                aria-hidden="true"
+              />
               EN
             </button>
           </li>

@@ -40,5 +40,8 @@
       "title": "Cat&Facts",
       "description": "Cat Generator to przejrzysta, responsywna aplikacja internetowa zbudowana w oparciu o Next.js i TypeScript. Pobiera losowe zdjęcia kotów i ciekawostki za pomocą niestandardowego interfejsu API REST, z opcjonalnym filtrowaniem ras. Interfejs jest stylizowany za pomocą Tailwind CSS i wzbogacony o płynne animacje Motion One. Projekt jest w pełni wdrożony w Vercel i gotowy do eksploracji — nie wymaga logowania."
     }
+  },
+  "contact": {
+    "heading": "Kontakt"
   }
 }
