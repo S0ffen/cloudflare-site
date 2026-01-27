@@ -38,6 +38,9 @@
     },
     "project2": {
       "description": "Cat Generator is a clean, responsive web app built with Next.js and TypeScript. It fetches random cat images and fun facts using a custom REST API, with optional breed filtering. The interface is styled using Tailwind CSS and enhanced with smooth Motion One animations. The project is fully deployed on Vercel and ready to explore — no login required."
+    },
+    "project3": {
+      "description": "The project focuses on modern design, clear content structure, and responsiveness, showcasing the company's offerings, collaboration process, and contact information in an accessible format. The site is designed as an example of a professional promotional website for local businesses in the renewable energy sector."
     }
   },
   "contact": {

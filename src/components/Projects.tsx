@@ -131,6 +131,67 @@ const Projects: React.FC = () => {
           </a>
         </div>
       </motion.div>
+      {/* Trzeci projekt */}
+      <motion.div
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6, delay: 0.3 }}
+        viewport={{ once: true }}
+        className="flex flex-col lg:flex-row items-start gap-12 max-w-7xl mx-auto m-16"
+      >
+        {/* Lewa strona: obrazek z efektem neonowym */}
+        <div className="relative w-full lg:w-1/2 flex justify-center">
+          <div className="absolute w-72 h-48 bg-pink-500 opacity-30 blur-3xl rounded-lg"></div>
+          <div className="relative border-4 border-pink-500 rounded-lg overflow-hidden shadow-lg">
+            <img
+              src="/SolarixoLogo.png" // <- podmień na własny obraz
+              alt="Project thumbnail"
+              className="w-lg h-100 object-cover"
+            />
+          </div>
+        </div>
+
+        {/* Prawa strona: opis */}
+        <div className="w-full lg:w-1/2 space-y-4">
+          <h3 className="text-3xl font-semibold text-[#F5F7FA]">
+            Solarixo energy
+          </h3>
+          <p className="text-sm text-gray-400 flex flex-wrap items-center gap-2">
+            {t("projects.title_desc")}{" "}
+            <span className="flex flex-wrap items-center gap-2 text-pink-500">
+              <SiTypescript title="TypeScript" className="text-[#3178C6]" />
+              TypeScript ·
+              <SiReact title="React" className="text-[#61DAFB]" />
+              React ·
+              <SiNextdotjs title="Next.js" className="text-white" />
+              Next.js
+              <SiTailwindcss title="Tailwind CSS" className="text-[#38BDF8]" />
+              <span>Tailwind CSS </span>
+              <SiVercel title="Vercel" className="text-white" />
+              Vercel
+            </span>
+          </p>
+          <p className="text-gray-200 leading-relaxed">
+            {/* Cat Generator is a clean, responsive web app built with Next.js and
+            TypeScript. It fetches random cat images and fun facts using a
+            custom REST API, with optional breed filtering. The interface is
+            styled using Tailwind CSS and enhanced with smooth Motion One
+            animations. The project is fully deployed on Vercel and ready to
+            explore — no login required. */}
+            {t("projects.project3.description")}
+          </p>
+          {/* Link do projektu */}
+          <a
+            href="https://solarixo-energy.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 border-2 border-pink-500 text-pink-500 px-4 py-2 font-semibold rounded-md hover:bg-pink-500 hover:text-white transition"
+          >
+            <FaExternalLinkAlt />
+            Live
+          </a>
+        </div>
+      </motion.div>
     </section>
   );
 };
