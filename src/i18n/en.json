@@ -64,13 +64,27 @@
     "notFound": "Case study not found.",
     "problemTitle": "Problem",
     "problemHeading": "Context and challenge",
-    "problemPlaceholder": "You can later describe the business problem, technical constraints, delivery context, and key project requirements here.",
     "solutionTitle": "Solution",
     "solutionHeading": "Approach and implementation",
-    "solutionPlaceholder": "Use this section to explain the architecture, chosen technologies, implementation decisions, and how the problem was solved.",
     "outcomeTitle": "Outcome",
     "outcomeHeading": "Result and value",
-    "outcomePlaceholder": "Here you can add the final outcome, user impact, process improvements, or other concrete project results."
+    "items": {
+      "bms": {
+        "problem": "You can later describe the business problem, technical constraints, delivery context, and key requirements for the BMS platform here.",
+        "solution": "Use this section to explain the architecture, chosen technologies, implementation decisions, and how the BMS problem was solved.",
+        "outcome": "Here you can add the final outcome, user impact, process improvements, or other concrete project results for the BMS platform."
+      },
+      "qrReader": {
+        "problem": "You can describe the need for automated QR code extraction from images and how this service fits into a broader business workflow.",
+        "solution": "Use this section to explain the Python service design, image-processing flow, data validation, and integration points with the rest of the system.",
+        "outcome": "Here you can describe the rollout result, time savings, reduced manual work, or other benefits gained from QR automation."
+      },
+      "photoExif": {
+        "problem": "You can describe the need to extract EXIF metadata and why technical photo information mattered in this workflow.",
+        "solution": "Use this section to explain the Python service, EXIF extraction approach, result normalization, and how the metadata was passed downstream.",
+        "outcome": "Here you can describe what information became available automatically and how that improved later photo processing or analysis."
+      }
+    }
   },
 
   "about": {

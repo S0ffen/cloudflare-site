@@ -2,7 +2,7 @@
   "nav": {
     "about": "O mnie",
     "skills": "Umiejętności",
-    "caseStudies": "Case studies",
+    "caseStudies": "Studia przypadków",
     "contact": "Kontakt",
     "resume": "CV"
   },
@@ -19,8 +19,8 @@
     "cta": "Zobacz projekt",
     "commercialNote": "Problem & solution",
     "groups": {
-      "commercial": "Commercial project",
-      "own": "Own project"
+      "commercial": "Projekt komercyjny",
+      "own": "Projekt własny"
     },
     "badges": {
       "own": "Projekt własny",
@@ -64,13 +64,27 @@
     "notFound": "Nie znaleziono studium przypadku.",
     "problemTitle": "Problem",
     "problemHeading": "Kontekst i wyzwanie",
-    "problemPlaceholder": "Tutaj możesz później opisać problem biznesowy, ograniczenia techniczne, kontekst wdrożenia i najważniejsze wymagania projektu.",
     "solutionTitle": "Solution",
     "solutionHeading": "Podejście i realizacja",
-    "solutionPlaceholder": "To miejsce na opis architektury, zastosowanych technologii, decyzji implementacyjnych i sposobu rozwiązania problemu.",
     "outcomeTitle": "Outcome",
     "outcomeHeading": "Rezultat i wartość",
-    "outcomePlaceholder": "Tutaj możesz dodać efekt końcowy, wpływ na użytkowników, usprawnienia procesu lub inne konkretne rezultaty projektu."
+    "items": {
+      "bms": {
+        "problem": "Tutaj możesz później opisać problem biznesowy, ograniczenia techniczne, kontekst wdrożenia i najważniejsze wymagania projektu BMS.",
+        "solution": "To miejsce na opis architektury, zastosowanych technologii, decyzji implementacyjnych i sposobu rozwiązania problemu w platformie BMS.",
+        "outcome": "Tutaj możesz dodać efekt końcowy, wpływ na użytkowników, usprawnienia procesu lub inne konkretne rezultaty projektu BMS."
+      },
+      "qrReader": {
+        "problem": "Tutaj możesz opisać potrzebę automatycznego odczytu kodów QR z obrazów oraz sposób włączenia tej usługi do większego procesu biznesowego.",
+        "solution": "W tej sekcji możesz dodać opis serwisu w Pythonie, logiki przetwarzania obrazów, walidacji danych i integracji z pozostałymi systemami.",
+        "outcome": "Tutaj możesz opisać rezultat wdrożenia, oszczędność czasu, redukcję błędów lub inne korzyści wynikające z automatyzacji odczytu QR."
+      },
+      "photoExif": {
+        "problem": "Tutaj możesz opisać potrzebę odczytywania metadanych EXIF oraz powód, dla którego analiza technicznych informacji ze zdjęć była istotna.",
+        "solution": "W tej sekcji możesz dodać opis serwisu w Pythonie, sposobu ekstrakcji danych EXIF, normalizacji wyników i przekazywania danych dalej.",
+        "outcome": "Tutaj możesz opisać, jakie informacje udało się automatycznie pozyskiwać i jak wpłynęło to na dalsze przetwarzanie lub analizę zdjęć."
+      }
+    }
   },
   "about": {
     "heading": "O mnie",

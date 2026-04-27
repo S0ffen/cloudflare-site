@@ -1,60 +1,15 @@
 import { motion } from "framer-motion";
 import { FaArrowLeft } from "react-icons/fa";
-import {
-  SiBlazor,
-  SiDotnet,
-  SiMqtt,
-  SiPostgresql,
-  SiPython,
-} from "react-icons/si";
 import { useTranslation } from "react-i18next";
-import { getCaseStudyByPath } from "../data/caseStudies";
-
-const detailStackContent: Record<string, React.ReactNode> = {
-  bms: (
-    <>
-      <SiDotnet className="text-[#7C3AED]" title=".NET" />
-      <SiPostgresql className="text-[#336791]" title="PostgreSQL" />
-      <span className="text-pink-400 text-xs font-semibold">C#</span>
-      <SiBlazor className="text-[#A020F0]" title="Blazor" />
-      <SiMqtt className="text-[#FF7A00]" title="MQTT" />
-      <span className="text-pink-400 text-xs font-semibold">BMS</span>
-    </>
-  ),
-  pythonService: (
-    <>
-      <SiPython className="text-[#3776AB]" title="Python" />
-      <span className="text-pink-400 text-xs font-semibold">API</span>
-      <span className="text-pink-400 text-xs font-semibold">Service</span>
-      <span className="text-pink-400 text-xs font-semibold">Image Processing</span>
-    </>
-  ),
-};
 
 type Props = {
-  pathname: string;
+  badge: "commercial" | "own";
+  itemKey: "bms" | "qrReader" | "photoExif";
+  stack: React.ReactNode;
 };
 
-const CaseStudyDetail: React.FC<Props> = ({ pathname }) => {
+const CaseStudyPageLayout: React.FC<Props> = ({ badge, itemKey, stack }) => {
   const { t } = useTranslation();
-  const study = getCaseStudyByPath(pathname);
-
-  if (!study) {
-    return (
-      <div className="min-h-screen bg-[#0f0826] px-6 py-24 text-[#F5F7FA]">
-        <div className="mx-auto max-w-4xl">
-          <a
-            href="/#case-studies"
-            className="inline-flex items-center gap-2 text-sm font-semibold text-pink-400"
-          >
-            <FaArrowLeft className="h-3.5 w-3.5" />
-            {t("caseStudyDetail.back")}
-          </a>
-          <h1 className="mt-10 text-4xl font-light">{t("caseStudyDetail.notFound")}</h1>
-        </div>
-      </div>
-    );
-  }
 
   return (
     <div className="min-h-screen bg-[#0f0826] px-6 py-24 text-[#F5F7FA]">
@@ -76,23 +31,23 @@ const CaseStudyDetail: React.FC<Props> = ({ pathname }) => {
           <div className="flex flex-wrap items-start justify-between gap-6">
             <div className="max-w-3xl">
               <p className="text-sm uppercase tracking-[0.35em] text-pink-400">
-                {t(`caseStudies.items.${study.key}.label`)}
+                {t(`caseStudies.items.${itemKey}.label`)}
               </p>
               <h1 className="mt-4 text-4xl md:text-5xl font-light">
-                {t(`caseStudies.items.${study.key}.title`)}
+                {t(`caseStudies.items.${itemKey}.title`)}
               </h1>
               <p className="mt-6 text-lg leading-relaxed text-gray-300">
-                {t(`caseStudies.items.${study.key}.description`)}
+                {t(`caseStudies.items.${itemKey}.description`)}
               </p>
             </div>
 
             <span className="rounded-full border border-pink-500/40 bg-pink-500/10 px-4 py-2 text-xs font-semibold uppercase tracking-[0.25em] text-pink-300">
-              {t(`caseStudies.badges.${study.badge}`)}
+              {t(`caseStudies.badges.${badge}`)}
             </span>
           </div>
 
           <div className="mt-8 flex flex-wrap items-center gap-3 text-base">
-            {detailStackContent[study.stack]}
+            {stack}
           </div>
         </motion.section>
 
@@ -105,7 +60,7 @@ const CaseStudyDetail: React.FC<Props> = ({ pathname }) => {
               {t("caseStudyDetail.problemHeading")}
             </h2>
             <p className="mt-4 leading-relaxed text-gray-300">
-              {t("caseStudyDetail.problemPlaceholder")}
+              {t(`caseStudyDetail.items.${itemKey}.problem`)}
             </p>
           </section>
 
@@ -117,7 +72,7 @@ const CaseStudyDetail: React.FC<Props> = ({ pathname }) => {
               {t("caseStudyDetail.solutionHeading")}
             </h2>
             <p className="mt-4 leading-relaxed text-gray-300">
-              {t("caseStudyDetail.solutionPlaceholder")}
+              {t(`caseStudyDetail.items.${itemKey}.solution`)}
             </p>
           </section>
         </div>
@@ -130,7 +85,7 @@ const CaseStudyDetail: React.FC<Props> = ({ pathname }) => {
             {t("caseStudyDetail.outcomeHeading")}
           </h2>
           <p className="mt-4 leading-relaxed text-gray-300">
-            {t("caseStudyDetail.outcomePlaceholder")}
+            {t(`caseStudyDetail.items.${itemKey}.outcome`)}
           </p>
         </section>
       </div>
@@ -138,4 +93,4 @@ const CaseStudyDetail: React.FC<Props> = ({ pathname }) => {
   );
 };
 
-export default CaseStudyDetail;
+export default CaseStudyPageLayout;
