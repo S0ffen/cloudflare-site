@@ -2,14 +2,75 @@
   "nav": {
     "about": "About",
     "skills": "Skills",
-    "projects": "Projects",
+    "caseStudies": "Case studies",
     "contact": "Contact",
     "resume": "Resume"
   },
   "hero": {
     "hello": "Hello! I am",
     "description": "I’m a software engineer with a degree in programming, working daily on the development of Building Management Systems (BMS) using tools like DevExpress, Blazor, C#, PostgreSQL, Javascript, and .NET. In my free time, I focus on creating modern web applications with React, Next.js, and Node.js.",
-    "button": "Get my resume"
+    "button": "Get my resume",
+    "caseStudiesButton": "Case studies"
+  },
+  "caseStudies": {
+    "eyebrow": "Selected work",
+    "heading": "Case studies",
+    "description": "A concise overview of projects where clean interfaces, practical features, and sound technical decisions mattered most.",
+    "cta": "View project",
+    "commercialNote": "Problem & solution",
+    "groups": {
+      "commercial": "Commercial project",
+      "own": "Own project"
+    },
+    "badges": {
+      "own": "Own project",
+      "commercial": "Commercial project"
+    },
+    "items": {
+      "budgetapp": {
+        "label": "Personal finance",
+        "title": "BudgetApp",
+        "description": "An expense management app with clear user and category breakdowns, plus a built-in demo flow for quick evaluation."
+      },
+      "catfacts": {
+        "label": "API and frontend",
+        "title": "Cat & Facts",
+        "description": "A responsive app fetching cat images and facts from a custom API, focused on simplicity and smooth interactions."
+      },
+      "solarixo": {
+        "label": "Company website",
+        "title": "Solarixo Energy",
+        "description": "A modern promotional site structured to present services, collaboration flow, and contact details in a clear way."
+      },
+      "bms": {
+        "label": "Building automation",
+        "title": "BMS Platform",
+        "description": "A commercial Building Management Systems case focused on installation controls, data monitoring, and operator-facing workflows."
+      },
+      "qrReader": {
+        "label": "Backend service",
+        "title": "QR Code Reader Service",
+        "description": "A Python service for reading QR codes from provided images, designed for integration with larger workflows and automated data processing."
+      },
+      "photoExif": {
+        "label": "Backend service",
+        "title": "Photo EXIF Reader Service",
+        "description": "A Python service for extracting EXIF metadata from photos, used to read technical image details and prepare them for downstream processing."
+      }
+    }
+  },
+  "caseStudyDetail": {
+    "back": "Back to case studies",
+    "notFound": "Case study not found.",
+    "problemTitle": "Problem",
+    "problemHeading": "Context and challenge",
+    "problemPlaceholder": "You can later describe the business problem, technical constraints, delivery context, and key project requirements here.",
+    "solutionTitle": "Solution",
+    "solutionHeading": "Approach and implementation",
+    "solutionPlaceholder": "Use this section to explain the architecture, chosen technologies, implementation decisions, and how the problem was solved.",
+    "outcomeTitle": "Outcome",
+    "outcomeHeading": "Result and value",
+    "outcomePlaceholder": "Here you can add the final outcome, user impact, process improvements, or other concrete project results."
   },
 
   "about": {
@@ -33,6 +94,11 @@
   "projects": {
     "heading": "Projects",
     "title_desc": "Made With: ",
+    "commercialNote": "No public demo available",
+    "badges": {
+      "own": "Own project",
+      "commercial": "Commercial project"
+    },
     "project1": {
       "description": "BudgetApp is a clean web app built in Next.js+ TypeScript, providing payouts in a list format interactions by user and category. Built-in demo allows sharing without logging in."
     },
@@ -41,6 +107,9 @@
     },
     "project3": {
       "description": "The project focuses on modern design, clear content structure, and responsiveness, showcasing the company's offerings, collaboration process, and contact information in an accessible format. The site is designed as an example of a professional promotional website for local businesses in the renewable energy sector."
+    },
+    "project4": {
+      "description": "A commercial Building Management Systems project focused on building controls, data monitoring, and operator workflows. My work here centers on stability, clear interfaces, and shipping features that are directly useful in day-to-day operations."
     }
   },
   "contact": {

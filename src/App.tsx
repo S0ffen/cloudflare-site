@@ -1,12 +1,19 @@
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import About from "./components/About";
+import CaseStudies from "./components/CaseStudies";
+import CaseStudyDetail from "./components/CaseStudyDetail";
 import Skills from "./components/Skills";
-import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import "./i18n";
 
 const App: React.FC = () => {
+  const pathname = window.location.pathname;
+
+  if (pathname.startsWith("/case-studies/")) {
+    return <CaseStudyDetail pathname={pathname} />;
+  }
+
   return (
     <div className="bg-[#0f0826] min-h-screen">
       <Navbar />
@@ -19,8 +26,8 @@ const App: React.FC = () => {
         <Skills />
         <div className="mt-16 h-px w-full bg-gradient-to-r from-transparent via-white/25 to-transparent" />
       </section>
-      <section id="projects">
-        <Projects />
+      <section id="case-studies-section">
+        <CaseStudies />
         <div className="mt-16 h-px w-full bg-gradient-to-r from-transparent via-white/25 to-transparent" />
       </section>
       <section id="contact">

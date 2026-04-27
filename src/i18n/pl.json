@@ -2,14 +2,75 @@
   "nav": {
     "about": "O mnie",
     "skills": "Umiejętności",
-    "projects": "Projekty",
+    "caseStudies": "Case studies",
     "contact": "Kontakt",
     "resume": "CV"
   },
   "hero": {
     "hello": "Cześć! Jestem",
     "description": "Jestem programistą z wykształceniem inżynierskim, pracującym na co dzień nad rozwojem systemów zarządzania budynkami (BMS) z wykorzystaniem narzędzi takich jak DevExpress, Blazor, C#, PostgreSQL, Javascript i .NET. W wolnym czasie skupiam się na tworzeniu nowoczesnych aplikacji internetowych z wykorzystaniem React, Next.js i Node.js.",
-    "button": "Pobierz moje CV"
+    "button": "Pobierz moje CV",
+    "caseStudiesButton": "Studia przypadków"
+  },
+  "caseStudies": {
+    "eyebrow": "Wybrane realizacje",
+    "heading": "Studia przypadków",
+    "description": "Krótki przegląd projektów, w których liczyły się czytelny interfejs, praktyczne funkcje i sensowne decyzje techniczne.",
+    "cta": "Zobacz projekt",
+    "commercialNote": "Problem & solution",
+    "groups": {
+      "commercial": "Commercial project",
+      "own": "Own project"
+    },
+    "badges": {
+      "own": "Projekt własny",
+      "commercial": "Projekt komercyjny"
+    },
+    "items": {
+      "budgetapp": {
+        "label": "Finanse osobiste",
+        "title": "BudgetApp",
+        "description": "Aplikacja do zarządzania wydatkami z czytelnym podziałem na użytkowników i kategorie oraz gotowym trybem demo."
+      },
+      "catfacts": {
+        "label": "API i frontend",
+        "title": "Cat & Facts",
+        "description": "Responsywna aplikacja pobierająca zdjęcia kotów i ciekawostki z własnego API, z naciskiem na prostotę i płynność interakcji."
+      },
+      "solarixo": {
+        "label": "Strona firmowa",
+        "title": "Solarixo Energy",
+        "description": "Nowoczesna witryna promocyjna zaprojektowana tak, aby w przejrzysty sposób prezentować ofertę, proces współpracy i kontakt."
+      },
+      "bms": {
+        "label": "Automatyka budynkowa",
+        "title": "BMS Platform",
+        "description": "Komercyjny system rozwijany dla Building Management Systems, skupiony na sterowaniu instalacjami, monitoringu danych i wsparciu codziennej pracy operatorów."
+      },
+      "qrReader": {
+        "label": "Usługa backendowa",
+        "title": "QR Code Reader Service",
+        "description": "Usługa napisana w Pythonie do odczytywania kodów QR z dostarczonych obrazów, przygotowana do integracji z większymi procesami i automatyzacją obiegu danych."
+      },
+      "photoExif": {
+        "label": "Usługa backendowa",
+        "title": "Photo EXIF Reader Service",
+        "description": "Serwis w Pythonie analizujący metadane EXIF zdjęć, wykorzystywany do odczytu informacji technicznych i przygotowania danych do dalszego przetwarzania."
+      }
+    }
+  },
+  "caseStudyDetail": {
+    "back": "Wróć do studiów przypadków",
+    "notFound": "Nie znaleziono studium przypadku.",
+    "problemTitle": "Problem",
+    "problemHeading": "Kontekst i wyzwanie",
+    "problemPlaceholder": "Tutaj możesz później opisać problem biznesowy, ograniczenia techniczne, kontekst wdrożenia i najważniejsze wymagania projektu.",
+    "solutionTitle": "Solution",
+    "solutionHeading": "Podejście i realizacja",
+    "solutionPlaceholder": "To miejsce na opis architektury, zastosowanych technologii, decyzji implementacyjnych i sposobu rozwiązania problemu.",
+    "outcomeTitle": "Outcome",
+    "outcomeHeading": "Rezultat i wartość",
+    "outcomePlaceholder": "Tutaj możesz dodać efekt końcowy, wpływ na użytkowników, usprawnienia procesu lub inne konkretne rezultaty projektu."
   },
   "about": {
     "heading": "O mnie",
@@ -32,6 +93,11 @@
   "projects": {
     "heading": "Projekty",
     "title_desc": "Zrobione za pomocą:",
+    "commercialNote": "Projekt bez publicznego demo",
+    "badges": {
+      "own": "Projekt własny",
+      "commercial": "Projekt komercyjny"
+    },
     "project1": {
       "title": "BudgetApp",
       "description": "BudgetApp to przejrzysta aplikacja webowa stworzona w Next.js + TypeScript, umożliwiająca śledzenie wydatków w formie list transakcji z podziałem na użytkowników i kategorie. Wbudowane demo pozwala użytkownikowi przetestować funkcjonalności bez logowania."
@@ -43,6 +109,10 @@
     "project3": {
       "title": "Solarixo energy",
       "description": "Projekt skupia się na nowoczesnym designie, czytelnej strukturze treści oraz responsywności, prezentując ofertę firmy, proces współpracy i dane kontaktowe w przystępnej formie. Strona została zaprojektowana jako przykład profesjonalnej witryny promocyjnej dla lokalnych firm z sektora OZE."
+    },
+    "project4": {
+      "title": "BMS Platform",
+      "description": "Komercyjny projekt rozwijany w obszarze Building Management Systems, wspierający sterowanie instalacjami budynkowymi, monitoring danych i codzienną pracę operatorów. W tym projekcie skupiam się na stabilności, czytelnych interfejsach oraz rozwoju funkcji realnie wykorzystywanych przez użytkowników."
     }
   },
   "contact": {

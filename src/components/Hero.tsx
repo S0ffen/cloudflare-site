@@ -4,7 +4,10 @@ import { useTranslation } from "react-i18next";
 const Hero: React.FC = () => {
   const { t } = useTranslation();
   return (
-    <section className="min-h-screen flex flex-col md:flex-row items-center justify-center md:justify-center gap-x-10 px-6 md:px-32">
+    <section
+      id="home"
+      className="min-h-screen flex flex-col md:flex-row items-center justify-center md:justify-center gap-x-10 px-6 md:px-32"
+    >
       {/* Lewa strona - tekst */}
       <motion.div
         initial={{ opacity: 0, y: 40 }}
@@ -36,14 +39,23 @@ const Hero: React.FC = () => {
           {t("hero.description")}
         </p>
 
-        <motion.a
-          href="/resume.pdf"
-          className="inline-block border-2 border-pink-500 text-pink-500 px-6 py-3 text-base md:text-lg font-bold rounded-md hover:bg-pink-500 hover:text-white transition-all"
-          whileHover={{ scale: 1.1 }}
-        >
-          {/* Get my resume */}
-          {t("hero.button")}
-        </motion.a>
+        <div className="flex flex-col sm:flex-row sm:flex-wrap gap-4 justify-center md:justify-start pt-2">
+          <motion.a
+            href="/resume.pdf"
+            className="inline-block border-2 border-pink-500 text-pink-500 px-6 py-3 text-base md:text-lg font-bold rounded-md hover:bg-pink-500 hover:text-white transition-all"
+            whileHover={{ scale: 1.05 }}
+          >
+            {t("hero.button")}
+          </motion.a>
+
+          <motion.a
+            href="#case-studies"
+            className="inline-block bg-pink-500 text-white px-6 py-3 text-base md:text-lg font-bold rounded-md border-2 border-pink-500 hover:bg-pink-400 hover:border-pink-400 transition-all"
+            whileHover={{ scale: 1.05 }}
+          >
+            {t("hero.caseStudiesButton")}
+          </motion.a>
+        </div>
       </motion.div>
 
       {/* Prawa strona - Zdjęcie */}

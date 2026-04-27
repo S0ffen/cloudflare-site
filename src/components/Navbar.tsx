@@ -36,10 +36,15 @@ const Navbar: React.FC = () => {
         : "border-white/20 bg-white/5 text-white/80 hover:border-white/40 hover:bg-white/10 hover:text-pink-300"
     }`;
 
-  const navKeys = ["about", "skills", "projects", "contact", "resume"];
+  const navKeys = ["about", "skills", "caseStudies", "contact", "resume"];
 
   // Funkcja do płynnego przewijania do sekcji
   const scrollToSection = (id: string) => {
+    if (id === "resume") {
+      window.open("/resume.pdf", "_blank", "noopener,noreferrer");
+      return;
+    }
+
     const element = document.getElementById(id);
     if (element) {
       element.scrollIntoView({ behavior: "smooth" });
