@@ -8,7 +8,7 @@
   },
   "hero": {
     "hello": "Hello! I am",
-    "description": "I’m a software engineer with a degree in programming, working daily on the development of Building Management Systems (BMS) using tools like DevExpress, Blazor, C#, PostgreSQL, Javascript, and .NET. In my free time, I focus on creating modern web applications with React, Next.js, and Node.js.",
+    "description": "I’m a software engineer with a degree in programming. In my day-to-day work, I develop Building Management Systems (BMS) using .NET, ASP.NET , C#, Blazor, DevExpress, PostgreSQL, and JavaScript. Outside of work, I build modern web applications with Next.js, React, TypeScript, and Node.js.",
     "button": "Get my resume",
     "caseStudiesButton": "Case studies"
   },

@@ -8,7 +8,7 @@
   },
   "hero": {
     "hello": "Cześć! Jestem",
-    "description": "Jestem programistą z wykształceniem inżynierskim, pracującym na co dzień nad rozwojem systemów zarządzania budynkami (BMS) z wykorzystaniem narzędzi takich jak DevExpress, Blazor, C#, PostgreSQL, Javascript i .NET. W wolnym czasie skupiam się na tworzeniu nowoczesnych aplikacji internetowych z wykorzystaniem React, Next.js i Node.js.",
+    "description": "Jestem programistą z wykształceniem inżynierskim. Na co dzień rozwijam systemy zarządzania budynkami (BMS) z wykorzystaniem .NET,ASP.NET, C#, Blazor, DevExpress, PostgreSQL i JavaScript. Po pracy tworzę nowoczesne aplikacje webowe w Next.js, React, TypeScript i Node.js.",
     "button": "Pobierz moje CV",
     "caseStudiesButton": "Studia przypadków"
   },
