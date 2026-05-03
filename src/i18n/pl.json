@@ -2,7 +2,7 @@
   "nav": {
     "about": "O mnie",
     "skills": "Umiejętności",
-    "caseStudies": "Studia przypadków",
+    "caseStudies": "Projekty",
     "contact": "Kontakt",
     "resume": "CV"
   },
@@ -10,21 +10,21 @@
     "hello": "Cześć! Jestem",
     "description": "Jestem programistą z wykształceniem inżynierskim. Na co dzień rozwijam systemy zarządzania budynkami (BMS) z wykorzystaniem .NET,ASP.NET, C#, Blazor, DevExpress, PostgreSQL i JavaScript. Po pracy tworzę nowoczesne aplikacje webowe w Next.js, React, TypeScript i Node.js.",
     "button": "Pobierz moje CV",
-    "caseStudiesButton": "Studia przypadków"
+    "caseStudiesButton": "Projekty"
   },
   "caseStudies": {
-    "eyebrow": "Wybrane realizacje",
-    "heading": "Studia przypadków",
+    "eyebrow": "Wybrane projekty",
+    "heading": "Projekty",
     "description": "Krótki przegląd projektów, w których liczyły się czytelny interfejs, praktyczne funkcje i sensowne decyzje techniczne.",
     "cta": "Zobacz projekt",
     "commercialNote": "Problem & solution",
     "groups": {
-      "commercial": "Projekt komercyjny",
-      "own": "Projekt własny"
+      "commercial": "Projekty komercyjne",
+      "own": "Projekty własne"
     },
     "badges": {
-      "own": "Projekt własny",
-      "commercial": "Projekt komercyjny"
+      "own": "Projekty własne",
+      "commercial": "Projekty komercyjne"
     },
     "items": {
       "budgetapp": {
@@ -60,7 +60,7 @@
     }
   },
   "caseStudyDetail": {
-    "back": "Wróć do studiów przypadków",
+    "back": "Wróć do projektów",
     "notFound": "Nie znaleziono studium przypadku.",
     "problemTitle": "Problem",
     "problemHeading": "Kontekst i wyzwanie",

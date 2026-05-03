@@ -2,7 +2,7 @@
   "nav": {
     "about": "About",
     "skills": "Skills",
-    "caseStudies": "Case studies",
+    "caseStudies": "Projects",
     "contact": "Contact",
     "resume": "Resume"
   },
@@ -10,11 +10,11 @@
     "hello": "Hello! I am",
     "description": "I’m a software engineer with a degree in programming. In my day-to-day work, I develop Building Management Systems (BMS) using .NET, ASP.NET , C#, Blazor, DevExpress, PostgreSQL, and JavaScript. Outside of work, I build modern web applications with Next.js, React, TypeScript, and Node.js.",
     "button": "Get my resume",
-    "caseStudiesButton": "Case studies"
+    "caseStudiesButton": "Projects"
   },
   "caseStudies": {
-    "eyebrow": "Selected work",
-    "heading": "Case studies",
+    "eyebrow": "Selected projects",
+    "heading": "Projects",
     "description": "A concise overview of projects where clean interfaces, practical features, and sound technical decisions mattered most.",
     "cta": "View project",
     "commercialNote": "Problem & solution",
@@ -60,7 +60,7 @@
     }
   },
   "caseStudyDetail": {
-    "back": "Back to case studies",
+    "back": "Back to projects",
     "notFound": "Case study not found.",
     "problemTitle": "Problem",
     "problemHeading": "Context and challenge",
