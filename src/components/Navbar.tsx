@@ -36,7 +36,7 @@ const Navbar: React.FC = () => {
         : "border-white/20 bg-white/5 text-white/80 hover:border-white/40 hover:bg-white/10 hover:text-pink-300"
     }`;
 
-  const navKeys = ["about", "skills", "caseStudies", "contact", "resume"];
+  const navKeys = ["skills", "caseStudies", "contact", "resume"];
 
   // Funkcja do płynnego przewijania do sekcji
   const scrollToSection = (id: string) => {

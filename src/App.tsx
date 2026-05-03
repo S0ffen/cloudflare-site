@@ -1,7 +1,6 @@
 import { useEffect } from "react";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
-import About from "./components/About";
 import CaseStudies from "./components/CaseStudies";
 import Skills from "./components/Skills";
 import Contact from "./components/Contact";
@@ -48,9 +47,8 @@ const App: React.FC = () => {
   return (
     <div className="bg-[#0f0826] min-h-screen">
       <Navbar />
-      <section id="about">
+      <section>
         <Hero />
-        <About />
         <div className="mt-16 h-px w-full  bg-gradient-to-r from-transparent via-white/25 to-transparent" />
       </section>
       <section id="skills">
