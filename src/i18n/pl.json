@@ -29,8 +29,8 @@
     "items": {
       "budgetapp": {
         "label": "Finanse osobiste",
-        "title": "BudgetApp",
-        "description": "Aplikacja do zarządzania wydatkami z czytelnym podziałem na użytkowników i kategorie oraz gotowym trybem demo."
+        "title": "Financial App",
+        "description": "Osobisty tracker finansów zbudowany w Next.js, pozwalający śledzić wydatki i przychody, importować transakcje z plików ING CSV oraz analizować dane na dashboardzie."
       },
       "catfacts": {
         "label": "API i frontend",
@@ -39,8 +39,8 @@
       },
       "solarixo": {
         "label": "Strona firmowa",
-        "title": "Solarixo Energy",
-        "description": "Nowoczesna witryna promocyjna zaprojektowana tak, aby w przejrzysty sposób prezentować ofertę, proces współpracy i kontakt."
+        "title": "LurniFlow",
+        "description": "Aplikacja, która zamienia wiedzę zdobytą przez użytkownika podczas sesji czytania w fiszki, pomagając utrwalać najważniejsze informacje w bardziej aktywny sposób."
       },
       "bms": {
         "label": "Automatyka budynkowa",

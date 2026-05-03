@@ -21,6 +21,8 @@ const stackContent: Record<string, React.ReactNode> = {
       <SiTypescript className="text-[#3178C6]" title="TypeScript" />
       <SiReact className="text-[#61DAFB]" title="React" />
       <SiNextdotjs className="text-white" title="Next.js" />
+      <span className="text-pink-400 text-xs font-semibold">Prisma</span>
+      <SiPostgresql className="text-[#336791]" title="PostgreSQL" />
       <SiTailwindcss className="text-[#38BDF8]" title="Tailwind CSS" />
       <SiVercel className="text-white" title="Vercel" />
     </>

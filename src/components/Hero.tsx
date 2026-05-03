@@ -50,7 +50,7 @@ const Hero: React.FC = () => {
 
           <motion.a
             href="#case-studies"
-            className="inline-block bg-pink-500 text-white px-6 py-3 text-base md:text-lg font-bold rounded-md border-2 border-pink-500 hover:bg-pink-400 hover:border-pink-400 transition-all"
+            className="inline-block border-2 border-pink-500/45 bg-pink-500/10 text-pink-200 px-6 py-3 text-base md:text-lg font-bold rounded-md hover:border-pink-400/70 hover:bg-pink-500/18 hover:text-white transition-all"
             whileHover={{ scale: 1.05 }}
           >
             {t("hero.caseStudiesButton")}

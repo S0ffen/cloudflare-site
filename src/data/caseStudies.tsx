@@ -14,7 +14,7 @@ export type CaseStudy = {
 export const caseStudies: CaseStudy[] = [
   {
     key: "budgetapp",
-    href: "https://budgeting-pi.vercel.app/demo",
+    href: "https://github.com/S0ffen/Financial-app",
     badge: "own",
     icon: GiReceiveMoney,
     stack: "budgetapp",
@@ -28,7 +28,7 @@ export const caseStudies: CaseStudy[] = [
   },
   {
     key: "solarixo",
-    href: "https://solarixo-energy.vercel.app/",
+    href: "https://lurniflow.com/",
     badge: "own",
     icon: FaRegBuilding,
     stack: "solarixo",
