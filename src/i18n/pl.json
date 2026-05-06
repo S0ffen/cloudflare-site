@@ -40,7 +40,7 @@
       "solarixo": {
         "label": "Strona firmowa",
         "title": "LurniFlow",
-        "description": "Aplikacja, która zamienia wiedzę zdobytą przez użytkownika podczas sesji czytania w fiszki, pomagając utrwalać najważniejsze informacje w bardziej aktywny sposób."
+        "description": "Aplikacja, która zamienia wiedzę zdobytą przez użytkownika podczas sesji czytania w fiszki, pomagając utrwalać najważniejsze informacje w bardziej aktywny sposób. Projekt jest self-hosted i wdrażany bez Vercela z wykorzystaniem GitHub Actions."
       },
       "bms": {
         "label": "Automatyka budynkowa",

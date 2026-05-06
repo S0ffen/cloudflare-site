@@ -6,6 +6,7 @@ import {
   SiDotnet,
   SiMqtt,
   SiNextdotjs,
+  SiPrisma,
   SiPython,
   SiPostgresql,
   SiReact,
@@ -14,6 +15,9 @@ import {
   SiVercel,
 } from "react-icons/si";
 import { caseStudies } from "../data/caseStudies";
+import { TbApi } from "react-icons/tb";
+import { GrServices } from "react-icons/gr";
+import { HiPhoto } from "react-icons/hi2";
 
 const stackContent: Record<string, React.ReactNode> = {
   budgetapp: (
@@ -21,7 +25,7 @@ const stackContent: Record<string, React.ReactNode> = {
       <SiTypescript className="text-[#3178C6]" title="TypeScript" />
       <SiReact className="text-[#61DAFB]" title="React" />
       <SiNextdotjs className="text-white" title="Next.js" />
-      <span className="text-pink-400 text-xs font-semibold">Prisma</span>
+      <SiPrisma className="text-white" title="Prisma" />
       <SiPostgresql className="text-[#336791]" title="PostgreSQL" />
       <SiTailwindcss className="text-[#38BDF8]" title="Tailwind CSS" />
       <SiVercel className="text-white" title="Vercel" />
@@ -40,8 +44,9 @@ const stackContent: Record<string, React.ReactNode> = {
       <SiTypescript className="text-[#3178C6]" title="TypeScript" />
       <SiReact className="text-[#61DAFB]" title="React" />
       <SiNextdotjs className="text-white" title="Next.js" />
+      <SiPrisma className="text-white" title="Prisma" />
+      <SiPostgresql className="text-[#336791]" title="PostgreSQL" />
       <SiTailwindcss className="text-[#38BDF8]" title="Tailwind CSS" />
-      <SiVercel className="text-white" title="Vercel" />
     </>
   ),
   bms: (
@@ -56,9 +61,9 @@ const stackContent: Record<string, React.ReactNode> = {
   pythonService: (
     <>
       <SiPython className="text-[#3776AB]" title="Python" />
-      <span className="text-pink-400 text-xs font-semibold">API</span>
-      <span className="text-pink-400 text-xs font-semibold">Service</span>
-      <span className="text-pink-400 text-xs font-semibold">Image Processing</span>
+      <TbApi className="text-yellow-400" title="API" />
+      <GrServices className="text-green-400" title="Service" />
+      <HiPhoto className="text-purple-400" title="Image Processing" />
     </>
   ),
 };

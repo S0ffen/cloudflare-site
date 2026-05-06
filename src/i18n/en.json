@@ -40,7 +40,7 @@
       "solarixo": {
         "label": "Company website",
         "title": "LurniFlow",
-        "description": "An app that turns what the user learns during a reading session into flashcards, helping reinforce the most important information in a more active way."
+        "description": "An app that turns what the user learns during a reading session into flashcards, helping reinforce the most important information in a more active way. The project is self-hosted and deployed without Vercel using GitHub Actions."
       },
       "bms": {
         "label": "Building automation",
