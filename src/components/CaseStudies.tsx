@@ -70,9 +70,12 @@ const stackContent: Record<string, React.ReactNode> = {
 
 const CaseStudies: React.FC = () => {
   const { t } = useTranslation();
+  const byRank = (left: (typeof caseStudies)[number], right: (typeof caseStudies)[number]) =>
+    (right.rank ?? 0) - (left.rank ?? 0);
+
   const groupedStudies = {
-    commercial: caseStudies.filter((study) => study.badge === "commercial"),
-    own: caseStudies.filter((study) => study.badge === "own"),
+    commercial: caseStudies.filter((study) => study.badge === "commercial").sort(byRank),
+    own: caseStudies.filter((study) => study.badge === "own").sort(byRank),
   };
 
   return (
@@ -114,7 +117,9 @@ const CaseStudies: React.FC = () => {
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.5, delay: index * 0.12 }}
                   viewport={{ once: true }}
-                  className="group rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur-sm transition hover:border-pink-500/60 hover:bg-white/8"
+                  className={`group rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur-sm transition hover:border-pink-500/60 hover:bg-white/8 ${
+                    study.rank && study.rank > 1 ? "lg:col-span-2" : ""
+                  }`}
                 >
                   <div className="flex items-start justify-between gap-4">
                     <div className="flex items-center gap-4">
@@ -143,7 +148,7 @@ const CaseStudies: React.FC = () => {
                     {stackContent[study.stack]}
                   </div>
 
-                  {study.href ? (
+                  {study.href && (
                     <a
                       href={study.href}
                       target="_blank"
@@ -151,14 +156,6 @@ const CaseStudies: React.FC = () => {
                       className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-pink-400 transition group-hover:text-pink-300"
                     >
                       {t("caseStudies.cta")}
-                      <FaExternalLinkAlt className="h-3.5 w-3.5" />
-                    </a>
-                  ) : (
-                    <a
-                      href={study.internalPath}
-                      className="mt-6 inline-flex items-center gap-2 rounded-md border border-pink-500 px-4 py-2 text-sm font-semibold text-pink-400 transition hover:bg-pink-500 hover:text-white"
-                    >
-                      {t("caseStudies.commercialNote")}
                       <FaExternalLinkAlt className="h-3.5 w-3.5" />
                     </a>
                   )}

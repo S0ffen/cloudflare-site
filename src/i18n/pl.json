@@ -37,7 +37,7 @@
         "title": "Cat & Facts",
         "description": "Responsywna aplikacja pobierająca zdjęcia kotów i ciekawostki z własnego API, z naciskiem na prostotę i płynność interakcji."
       },
-      "solarixo": {
+      "lurniflow": {
         "label": "Strona firmowa",
         "title": "LurniFlow",
         "description": "Aplikacja, która zamienia wiedzę zdobytą przez użytkownika podczas sesji czytania w fiszki, pomagając utrwalać najważniejsze informacje w bardziej aktywny sposób. Projekt jest self-hosted i wdrażany bez Vercela z wykorzystaniem GitHub Actions."
@@ -45,7 +45,7 @@
       "bms": {
         "label": "Automatyka budynkowa",
         "title": "BMS Platform",
-        "description": "Komercyjny system rozwijany dla Building Management Systems, skupiony na sterowaniu instalacjami, monitoringu danych i wsparciu codziennej pracy operatorów."
+        "description": "Tworzyłem i rozwijałem aplikację BMS do wizualizacji oraz monitorowania danych z urządzeń budynkowych w czasie rzeczywistym. System umożliwia prezentację wartości pomiarowych, statusów urządzeń, alarmów oraz trendów historycznych na interaktywnych widokach i wykresach. W projekcie odpowiadałem za rozwój komponentów frontendowych w Blazorze, integrację z backendem .NET oraz obsługę danych pobieranych z bazy PostgreSQL i komunikacji MQTT. Implementowałem dynamiczne wykresy Highcharts z obsługą zoomowania, eksportu danych, flag zdarzeń, tooltipów oraz automatycznego odświeżania. Pracowałem także nad optymalizacją wydajności przy dużych zakresach danych historycznych, refaktoryzacją logiki generowania serii wykresów oraz testami jednostkowymi komponentów UI."
       },
       "qrReader": {
         "label": "Usługa backendowa",
@@ -58,78 +58,5 @@
         "description": "Serwis w Pythonie analizujący metadane EXIF zdjęć, wykorzystywany do odczytu informacji technicznych i przygotowania danych do dalszego przetwarzania."
       }
     }
-  },
-  "caseStudyDetail": {
-    "back": "Wróć do projektów",
-    "notFound": "Nie znaleziono studium przypadku.",
-    "problemTitle": "Problem",
-    "problemHeading": "Kontekst i wyzwanie",
-    "solutionTitle": "Solution",
-    "solutionHeading": "Podejście i realizacja",
-    "outcomeTitle": "Outcome",
-    "outcomeHeading": "Rezultat i wartość",
-    "items": {
-      "bms": {
-        "problem": "Tutaj możesz później opisać problem biznesowy, ograniczenia techniczne, kontekst wdrożenia i najważniejsze wymagania projektu BMS.",
-        "solution": "To miejsce na opis architektury, zastosowanych technologii, decyzji implementacyjnych i sposobu rozwiązania problemu w platformie BMS.",
-        "outcome": "Tutaj możesz dodać efekt końcowy, wpływ na użytkowników, usprawnienia procesu lub inne konkretne rezultaty projektu BMS."
-      },
-      "qrReader": {
-        "problem": "Tutaj możesz opisać potrzebę automatycznego odczytu kodów QR z obrazów oraz sposób włączenia tej usługi do większego procesu biznesowego.",
-        "solution": "W tej sekcji możesz dodać opis serwisu w Pythonie, logiki przetwarzania obrazów, walidacji danych i integracji z pozostałymi systemami.",
-        "outcome": "Tutaj możesz opisać rezultat wdrożenia, oszczędność czasu, redukcję błędów lub inne korzyści wynikające z automatyzacji odczytu QR."
-      },
-      "photoExif": {
-        "problem": "Tutaj możesz opisać potrzebę odczytywania metadanych EXIF oraz powód, dla którego analiza technicznych informacji ze zdjęć była istotna.",
-        "solution": "W tej sekcji możesz dodać opis serwisu w Pythonie, sposobu ekstrakcji danych EXIF, normalizacji wyników i przekazywania danych dalej.",
-        "outcome": "Tutaj możesz opisać, jakie informacje udało się automatycznie pozyskiwać i jak wpłynęło to na dalsze przetwarzanie lub analizę zdjęć."
-      }
-    }
-  },
-  "about": {
-    "heading": "O mnie",
-    "past": {
-      "title": "Przeszłość",
-      "text": "Odkryłem programowanie w wieku 16 lat — zaczęło się jako hobby, które szybko stało się moją pasją. Możliwość tworzenia czegoś z niczego przy użyciu samego kodu zafascynowała mnie od początku. Z czasem szlifowałem umiejętności, tworząc strony internetowe, eksperymentując z różnymi technologiami i podejmując się coraz bardziej złożonych zadań."
-    },
-    "present": {
-      "title": "Obecnie",
-      "text": "Obecnie pracuję jako Fullstack Developer, koncentrując się na rozwoju systemów zarządzania budynkami (BMS) do takich zastosowań jak sterowanie pompami ciepła i automatyka budynkowa. Mój codzienny stos technologiczny obejmuje C#, Blazor, JavaScript, .NET, PostgreSQL, MQTT — w wolnym czasie nieustannie doskonalę umiejętności w React, Next.js, JavaScript i TypeScript. Aktywnie uczestniczę w tworzeniu wewnętrznych narzędzi i projektów open-source, zawsze dążąc do dostarczania czystego, skalowalnego i łatwego w utrzymaniu kodu."
-    },
-    "future": {
-      "title": "Przyszłość",
-      "text": "Napędza mnie ciągła nauka i wyzwania wyciągające mnie poza strefę komfortu. Patrząc w przyszłość, widzę siebie pogłębiającego wiedzę w full-stack development, eksplorującego systemy cloud-native i przyczyniającego się do tworzenia produktów rozwiązujących rzeczywiste problemy. Moim prostym celem jest tworzenie oprogramowania, które nie tylko działa, ale ma realny wpływ."
-    }
-  },
-  "skills": {
-    "heading": "Umiejętności"
-  },
-  "projects": {
-    "heading": "Projekty",
-    "title_desc": "Zrobione za pomocą:",
-    "commercialNote": "Projekt bez publicznego demo",
-    "badges": {
-      "own": "Projekt własny",
-      "commercial": "Projekt komercyjny"
-    },
-    "project1": {
-      "title": "BudgetApp",
-      "description": "BudgetApp to przejrzysta aplikacja webowa stworzona w Next.js + TypeScript, umożliwiająca śledzenie wydatków w formie list transakcji z podziałem na użytkowników i kategorie. Wbudowane demo pozwala użytkownikowi przetestować funkcjonalności bez logowania."
-    },
-    "project2": {
-      "title": "Cat&Facts",
-      "description": "Cat Generator to przejrzysta, responsywna aplikacja internetowa zbudowana w oparciu o Next.js i TypeScript. Pobiera losowe zdjęcia kotów i ciekawostki za pomocą niestandardowego interfejsu API REST, z opcjonalnym filtrowaniem ras. Interfejs jest stylizowany za pomocą Tailwind CSS i wzbogacony o płynne animacje Motion One. Projekt jest w pełni wdrożony w Vercel i gotowy do eksploracji — nie wymaga logowania."
-    },
-    "project3": {
-      "title": "Solarixo energy",
-      "description": "Projekt skupia się na nowoczesnym designie, czytelnej strukturze treści oraz responsywności, prezentując ofertę firmy, proces współpracy i dane kontaktowe w przystępnej formie. Strona została zaprojektowana jako przykład profesjonalnej witryny promocyjnej dla lokalnych firm z sektora OZE."
-    },
-    "project4": {
-      "title": "BMS Platform",
-      "description": "Komercyjny projekt rozwijany w obszarze Building Management Systems, wspierający sterowanie instalacjami budynkowymi, monitoring danych i codzienną pracę operatorów. W tym projekcie skupiam się na stabilności, czytelnych interfejsach oraz rozwoju funkcji realnie wykorzystywanych przez użytkowników."
-    }
-  },
-  "contact": {
-    "heading": "Kontakt"
   }
 }
