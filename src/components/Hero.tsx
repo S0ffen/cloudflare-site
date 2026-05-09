@@ -16,9 +16,7 @@ const Hero: React.FC = () => {
         viewport={{ once: true }}
         className="w-full md:w-[50%] lg:w-[55%] text-center md:text-left space-y-4"
       >
-        <p className="text-sm md:text-base lg:text-lg text-gray-400">
-          {t("hero.hello")}
-        </p>
+        <p className="text-sm md:text-base lg:text-lg text-gray-400">{t("hero.hello")}</p>
 
         <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight text-[#F5F7FA]">
           Adrian Tetłak

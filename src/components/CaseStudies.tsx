@@ -83,7 +83,7 @@ const CaseStudies: React.FC = () => {
     t(`caseStudies.items.${itemKey}.sections`, {
       returnObjects: true, // Domyślnie t() zwraca tekst, czyli string. A tutaj sections jest tablicą obiektów z JSON-a. Bez returnObjects: true i18next nie zwróci Ci poprawnie tablicy.
       defaultValue: [], //To fallback. Jeśli dany projekt nie ma sections, dostajesz pustą tablicę zamiast błędu albo stringa typu "caseStudies.items.qrReader.sections".
-    }) as { title: string; content: string }[];
+    }) as { title: string; content?: string; items?: string[] }[];
   //Renderuje opis tylko jeżeli nie jest pusty, np w BMS jest pusty bo są sekcje
   const getDescription = (itemKey: string) =>
     t(`caseStudies.items.${itemKey}.description`, { defaultValue: "" });
@@ -155,6 +155,15 @@ const CaseStudies: React.FC = () => {
                     <div key={section.title} className="mt-5">
                       <h4 className="text-lg font-semibold text-[#F5F7FA]">{section.title}</h4>
                       <p className="mt-2 text-gray-300 leading-relaxed">{section.content}</p>
+                      {section.items && section.items.length > 0 && (
+                        <ul className="mt-3 list-disc pl-5">
+                          {section.items.map((item, index) => (
+                            <li key={index} className="text-gray-300 leading-relaxed">
+                              {item}
+                            </li>
+                          ))}
+                        </ul>
+                      )}
                     </div>
                   ))}
 

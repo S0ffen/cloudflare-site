@@ -12,6 +12,9 @@
     "button": "Get my resume",
     "caseStudiesButton": "Projects"
   },
+  "skills": {
+    "heading": "Skills"
+  },
   "caseStudies": {
     "eyebrow": "Selected projects",
     "heading": "Projects",
@@ -44,7 +47,26 @@
       "bms": {
         "label": "Building automation",
         "title": "BMS Platform",
-        "description": "A commercial Building Management Systems case focused on installation controls, data monitoring, and operator-facing workflows."
+        "description": "",
+        "sections": [
+          {
+            "title": "Project overview",
+            "content": "A modern BMS/SCADA application for monitoring building installations in real time. The system makes it possible to visualize device data, analyze historical trends, track alarms and events, and present the current state of a facility through dynamic browser-based views."
+          },
+          {
+            "title": "My role",
+            "content": "I was responsible for developing key frontend elements in Blazor and integrating them with the .NET backend. I built components for device visualization, status and event handling, user permission logic, and advanced Highcharts charts with zooming, data export, tooltips, event flags, and automatic refresh."
+          },
+          {
+            "title": "My achievements",
+            "content": "The most important things I delivered:",
+            "items": [
+              "I optimized Highcharts chart performance, reducing render time by 50% for large historical data ranges.",
+              "I refactored chart data generation logic into separate classes, increasing unit test coverage from 60% to 85%.",
+              "I created over 30 unit tests for Blazor components, improving stability and making future application development easier."
+            ]
+          }
+        ]
       },
       "qrReader": {
         "label": "Backend service",
@@ -57,75 +79,5 @@
         "description": "A Python service for extracting EXIF metadata from photos, used to read technical image details and prepare them for downstream processing."
       }
     }
-  },
-  "caseStudyDetail": {
-    "back": "Back to projects",
-    "notFound": "Case study not found.",
-    "problemTitle": "Problem",
-    "problemHeading": "Context and challenge",
-    "solutionTitle": "Solution",
-    "solutionHeading": "Approach and implementation",
-    "outcomeTitle": "Outcome",
-    "outcomeHeading": "Result and value",
-    "items": {
-      "bms": {
-        "problem": "You can later describe the business problem, technical constraints, delivery context, and key requirements for the BMS platform here.",
-        "solution": "Use this section to explain the architecture, chosen technologies, implementation decisions, and how the BMS problem was solved.",
-        "outcome": "Here you can add the final outcome, user impact, process improvements, or other concrete project results for the BMS platform."
-      },
-      "qrReader": {
-        "problem": "You can describe the need for automated QR code extraction from images and how this service fits into a broader business workflow.",
-        "solution": "Use this section to explain the Python service design, image-processing flow, data validation, and integration points with the rest of the system.",
-        "outcome": "Here you can describe the rollout result, time savings, reduced manual work, or other benefits gained from QR automation."
-      },
-      "photoExif": {
-        "problem": "You can describe the need to extract EXIF metadata and why technical photo information mattered in this workflow.",
-        "solution": "Use this section to explain the Python service, EXIF extraction approach, result normalization, and how the metadata was passed downstream.",
-        "outcome": "Here you can describe what information became available automatically and how that improved later photo processing or analysis."
-      }
-    }
-  },
-
-  "about": {
-    "heading": "About Me",
-    "past": {
-      "title": "Past",
-      "text": "I first discovered programming at 16 — it started as a hobby, but quickly turned into a passion. The ability to build something from nothing using just code captivated me early on. Over time, I sharpened my skills by building websites, experimenting with different technologies, and pushing myself to solve increasingly complex problems."
-    },
-    "present": {
-      "title": "Present",
-      "text": "Nowadays, I’m working as a Fullstack Developer, focusing on the development of Building Management Systems (BMS) for applications like heat pump control and building automation. My daily stack includes C#, Blazor, Javascript, .NET, PostreSQL, MQTT — on my free time, I continuously improve my skills with React, Next.js, Javascript and Typescript. I actively contribute to internal tools and open-source side projects, always aiming to deliver clean, scalable, and maintainable code."
-    },
-    "future": {
-      "title": "Future",
-      "text": "I’m driven by constant learning and challenges that push me out of my comfort zone. Looking ahead, I see myself deepening my expertise in full-stack development, exploring cloud-native systems, and contributing to products that solve real-world problems. My goal is simple: to create software that’s not just functional, but impactful."
-    }
-  },
-  "skills": {
-    "heading": "Skills"
-  },
-  "projects": {
-    "heading": "Projects",
-    "title_desc": "Made With: ",
-    "commercialNote": "No public demo available",
-    "badges": {
-      "own": "Own project",
-      "commercial": "Commercial project"
-    },
-    "project1": {
-      "description": "BudgetApp is a clean web app built in Next.js+ TypeScript, providing payouts in a list format interactions by user and category. Built-in demo allows sharing without logging in."
-    },
-    "project2": {
-      "description": "Cat Generator is a clean, responsive web app built with Next.js and TypeScript. It fetches random cat images and fun facts using a custom REST API, with optional breed filtering. The interface is styled using Tailwind CSS and enhanced with smooth Motion One animations. The project is fully deployed on Vercel and ready to explore — no login required."
-    },
-    "project3": {
-      "description": "The project focuses on modern design, clear content structure, and responsiveness, showcasing the company's offerings, collaboration process, and contact information in an accessible format. The site is designed as an example of a professional promotional website for local businesses in the renewable energy sector."
-    },
-    "project4": {
-      "description": "A commercial Building Management Systems project focused on building controls, data monitoring, and operator workflows. My work here centers on stability, clear interfaces, and shipping features that are directly useful in day-to-day operations."
-    }
-  },
-  "contact": {
-    "heading": "Contact"
   }
 }

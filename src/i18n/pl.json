@@ -12,6 +12,9 @@
     "button": "Pobierz moje CV",
     "caseStudiesButton": "Projekty"
   },
+  "skills": {
+    "heading": "Umiejętności"
+  },
   "caseStudies": {
     "eyebrow": "Wybrane projekty",
     "heading": "Projekty",
@@ -56,7 +59,12 @@
           },
           {
             "title": "Moje osiągnięcia",
-            "content": "Poprawiłem wydajność pracy z dużymi zakresami danych historycznych, szczególnie przy obsłudze flag zdarzeń na wykresach. Refaktoryzowałem logikę generowania danych wykresów, przenosząc ją do osobnych klas, dzięki czemu kod stał się łatwiejszy w testowaniu, utrzymaniu i rozwijaniu. Przygotowywałem także testy jednostkowe dla komponentów Blazor, zwiększając stabilność aplikacji."
+            "content": "Najważniejsze rzeczy, które zrobiłem:",
+            "items": [
+              "Zoptymalizowałem wydajność wykresów Highcharts, redukując czas renderowania o 50% przy dużych zakresach danych historycznych.",
+              "Refaktoryzowałem logikę generowania danych wykresów do osobnych klas, co zwiększyło pokrycie testami jednostkowymi z 60% do 85%.",
+              "Stworzyłem ponad 30 testów jednostkowych dla komponentów Blazor, poprawiając stabilność i ułatwiając przyszły rozwój aplikacji."
+            ]
           }
         ]
       },

@@ -30,7 +30,7 @@ const App: React.FC = () => {
   }, [pathname]);
 
   return (
-    <div className="bg-[#0f0826] min-h-screen">
+    <div className="bg-[#0f0826]">
       <Navbar />
       <section>
         <Hero />
