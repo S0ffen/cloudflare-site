@@ -4,9 +4,6 @@ import Hero from "./components/Hero";
 import CaseStudies from "./components/CaseStudies";
 import Skills from "./components/Skills";
 import Contact from "./components/Contact";
-import BmsCaseStudyPage from "./pages/BmsCaseStudyPage";
-import PhotoExifCaseStudyPage from "./pages/PhotoExifCaseStudyPage";
-import QrReaderCaseStudyPage from "./pages/QrReaderCaseStudyPage";
 import "./i18n";
 
 const App: React.FC = () => {
@@ -31,18 +28,6 @@ const App: React.FC = () => {
 
     window.requestAnimationFrame(scrollToHash);
   }, [pathname]);
-
-  if (pathname === "/case-studies/bms-platform") {
-    return <BmsCaseStudyPage />;
-  }
-
-  if (pathname === "/case-studies/qr-code-reader-service") {
-    return <QrReaderCaseStudyPage />;
-  }
-
-  if (pathname === "/case-studies/photo-exif-reader-service") {
-    return <PhotoExifCaseStudyPage />;
-  }
 
   return (
     <div className="bg-[#0f0826] min-h-screen">

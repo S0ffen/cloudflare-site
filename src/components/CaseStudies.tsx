@@ -78,6 +78,16 @@ const CaseStudies: React.FC = () => {
     own: caseStudies.filter((study) => study.badge === "own").sort(byRank),
   };
 
+  //itemKey to BMS,Lurniflow itd czyli key z pliku caseStudies.tsx
+  const sections = (itemKey: string) =>
+    t(`caseStudies.items.${itemKey}.sections`, {
+      returnObjects: true, // Domyślnie t() zwraca tekst, czyli string. A tutaj sections jest tablicą obiektów z JSON-a. Bez returnObjects: true i18next nie zwróci Ci poprawnie tablicy.
+      defaultValue: [], //To fallback. Jeśli dany projekt nie ma sections, dostajesz pustą tablicę zamiast błędu albo stringa typu "caseStudies.items.qrReader.sections".
+    }) as { title: string; content: string }[];
+  //Renderuje opis tylko jeżeli nie jest pusty, np w BMS jest pusty bo są sekcje
+  const getDescription = (itemKey: string) =>
+    t(`caseStudies.items.${itemKey}.description`, { defaultValue: "" });
+
   return (
     <section id="case-studies" className="py-20 px-6">
       <div className="max-w-7xl mx-auto">
@@ -94,9 +104,6 @@ const CaseStudies: React.FC = () => {
           <h2 className="text-4xl md:text-5xl font-light text-[#F5F7FA] mb-5">
             {t("caseStudies.heading")}
           </h2>
-          <p className="text-base md:text-lg text-gray-300 leading-relaxed">
-            {t("caseStudies.description")}
-          </p>
         </motion.div>
 
         {(["commercial", "own"] as const).map((groupKey) => (
@@ -139,10 +146,17 @@ const CaseStudies: React.FC = () => {
                       {t(`caseStudies.badges.${study.badge}`)}
                     </span>
                   </div>
-
-                  <p className="mt-5 text-gray-300 leading-relaxed">
-                    {t(`caseStudies.items.${study.key}.description`)}
-                  </p>
+                  {getDescription(study.key) && getDescription(study.key).length > 0 && (
+                    <p className="mt-5 text-gray-300 leading-relaxed">
+                      {getDescription(study.key)}
+                    </p>
+                  )}
+                  {sections(study.key).map((section) => (
+                    <div key={section.title} className="mt-5">
+                      <h4 className="text-lg font-semibold text-[#F5F7FA]">{section.title}</h4>
+                      <p className="mt-2 text-gray-300 leading-relaxed">{section.content}</p>
+                    </div>
+                  ))}
 
                   <div className="mt-5 flex flex-wrap items-center gap-3 text-base">
                     {stackContent[study.stack]}

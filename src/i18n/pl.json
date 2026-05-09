@@ -15,7 +15,6 @@
   "caseStudies": {
     "eyebrow": "Wybrane projekty",
     "heading": "Projekty",
-    "description": "Krótki przegląd projektów, w których liczyły się czytelny interfejs, praktyczne funkcje i sensowne decyzje techniczne.",
     "cta": "Zobacz projekt",
     "commercialNote": "Problem & solution",
     "groups": {
@@ -45,7 +44,21 @@
       "bms": {
         "label": "Automatyka budynkowa",
         "title": "BMS Platform",
-        "description": "Tworzyłem i rozwijałem aplikację BMS do wizualizacji oraz monitorowania danych z urządzeń budynkowych w czasie rzeczywistym. System umożliwia prezentację wartości pomiarowych, statusów urządzeń, alarmów oraz trendów historycznych na interaktywnych widokach i wykresach. W projekcie odpowiadałem za rozwój komponentów frontendowych w Blazorze, integrację z backendem .NET oraz obsługę danych pobieranych z bazy PostgreSQL i komunikacji MQTT. Implementowałem dynamiczne wykresy Highcharts z obsługą zoomowania, eksportu danych, flag zdarzeń, tooltipów oraz automatycznego odświeżania. Pracowałem także nad optymalizacją wydajności przy dużych zakresach danych historycznych, refaktoryzacją logiki generowania serii wykresów oraz testami jednostkowymi komponentów UI."
+        "description": "",
+        "sections": [
+          {
+            "title": "Opis projektu",
+            "content": "Nowoczesna aplikacja BMS/SCADA do monitorowania instalacji budynkowych w czasie rzeczywistym. System pozwala wizualizować dane z urządzeń, analizować trendy historyczne, śledzić alarmy i zdarzenia oraz prezentować aktualny stan obiektu na dynamicznych widokach dostępnych z poziomu przeglądarki."
+          },
+          {
+            "title": "Moja rola",
+            "content": "Byłem odpowiedzialny za rozwój kluczowych elementów frontendu w Blazorze oraz ich integrację z backendem .NET. Tworzyłem komponenty wizualizujące urządzenia, obsługę statusów i zdarzeń, logikę uprawnień użytkowników oraz zaawansowane wykresy Highcharts z zoomowaniem, eksportem danych, tooltipami, flagami zdarzeń i automatycznym odświeżaniem."
+          },
+          {
+            "title": "Moje osiągnięcia",
+            "content": "Poprawiłem wydajność pracy z dużymi zakresami danych historycznych, szczególnie przy obsłudze flag zdarzeń na wykresach. Refaktoryzowałem logikę generowania danych wykresów, przenosząc ją do osobnych klas, dzięki czemu kod stał się łatwiejszy w testowaniu, utrzymaniu i rozwijaniu. Przygotowywałem także testy jednostkowe dla komponentów Blazor, zwiększając stabilność aplikacji."
+          }
+        ]
       },
       "qrReader": {
         "label": "Usługa backendowa",
