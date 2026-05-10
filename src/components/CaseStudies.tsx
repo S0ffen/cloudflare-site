@@ -1,4 +1,4 @@
-import { FaExternalLinkAlt } from "react-icons/fa";
+import { FaChartLine, FaExternalLinkAlt } from "react-icons/fa";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import {
@@ -13,11 +13,14 @@ import {
   SiTailwindcss,
   SiTypescript,
   SiVercel,
+  SiDevexpress,
 } from "react-icons/si";
 import { caseStudies } from "../data/caseStudies";
-import { TbApi } from "react-icons/tb";
+import { TbApi, TbBrandCSharp, TbBrandCss3, TbFileTypeSql } from "react-icons/tb";
 import { GrServices } from "react-icons/gr";
 import { HiPhoto } from "react-icons/hi2";
+import { IoLogoJavascript } from "react-icons/io";
+import { DiDotnet } from "react-icons/di";
 
 const stackContent: Record<string, React.ReactNode> = {
   budgetapp: (
@@ -37,9 +40,10 @@ const stackContent: Record<string, React.ReactNode> = {
       <SiReact className="text-[#61DAFB]" title="React" />
       <SiNextdotjs className="text-white" title="Next.js" />
       <SiTailwindcss className="text-[#38BDF8]" title="Tailwind CSS" />
+      <TbApi className="text-yellow-400" title="API" />
     </>
   ),
-  solarixo: (
+  lurniflow: (
     <>
       <SiTypescript className="text-[#3178C6]" title="TypeScript" />
       <SiReact className="text-[#61DAFB]" title="React" />
@@ -52,10 +56,14 @@ const stackContent: Record<string, React.ReactNode> = {
   bms: (
     <>
       <SiDotnet className="text-[#7C3AED]" title=".NET" />
+      <DiDotnet className="text-[#7C3AED]" title="ASP.NET" />
+      <TbBrandCSharp className="text-[#7C3AED]" title="C#" />
       <SiPostgresql className="text-[#336791]" title="PostgreSQL" />
-      <span className="text-pink-400 text-xs font-semibold">C#</span>
       <SiBlazor className="text-[#A020F0]" title="Blazor" />
       <SiMqtt className="text-[#FF7A00]" title="MQTT" />
+      <FaChartLine className="text-green-400" title="Highcharts" />
+      <IoLogoJavascript className="text-yellow-400" title="JavaScript" />
+      <SiDevexpress className="text-[#FF7A00]" title="DevExpress" />
     </>
   ),
   pythonService: (
@@ -64,6 +72,7 @@ const stackContent: Record<string, React.ReactNode> = {
       <TbApi className="text-yellow-400" title="API" />
       <GrServices className="text-green-400" title="Service" />
       <HiPhoto className="text-purple-400" title="Image Processing" />
+      <TbFileTypeSql className="text-blue-400" title="Database" />
     </>
   ),
 };
@@ -146,6 +155,12 @@ const CaseStudies: React.FC = () => {
                       {t(`caseStudies.badges.${study.badge}`)}
                     </span>
                   </div>
+                  <div className="mt-5 flex flex-wrap items-center gap-3 text-2xl">
+                    <h3 className="text-sm font-semibold text-gray-300">
+                      {t("caseStudies.technologies")}:
+                    </h3>
+                    {stackContent[study.stack]}
+                  </div>
                   {getDescription(study.key) && getDescription(study.key).length > 0 && (
                     <p className="mt-5 text-gray-300 leading-relaxed">
                       {getDescription(study.key)}
@@ -166,10 +181,6 @@ const CaseStudies: React.FC = () => {
                       )}
                     </div>
                   ))}
-
-                  <div className="mt-5 flex flex-wrap items-center gap-3 text-base">
-                    {stackContent[study.stack]}
-                  </div>
 
                   {study.href && (
                     <a

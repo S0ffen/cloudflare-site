@@ -20,6 +20,7 @@
     "heading": "Projekty",
     "cta": "Zobacz projekt",
     "commercialNote": "Problem & solution",
+    "technologies": "Technologie użyte w projekcie",
     "groups": {
       "commercial": "Projekty komercyjne",
       "own": "Projekty własne"
@@ -79,5 +80,9 @@
         "description": "Usługa napisana w Pythonie do odczytywania kodów QR z dostarczonych obrazów, przygotowana do integracji z większymi procesami i automatyzacją obiegu danych."
       }
     }
+  },
+  "contact": {
+    "heading": "Skontaktuj się ze mną",
+    "description": "Chętnie porozmawiam o potencjalnej współpracy, nowych projektach lub po prostu wymienię się doświadczeniami. Napisz do mnie, a odpowiem tak szybko, jak to możliwe!"
   }
 }

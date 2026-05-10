@@ -4,16 +4,11 @@ const Contact: React.FC = () => {
   const { t } = useTranslation();
   return (
     <section id="contact" className="relative py-20 px-6 text-[#F5F7FA]">
-      <h2 className="text-5xl font-light text-center mb-12">
-        {t("contact.heading")}
-      </h2>
+      <h2 className="text-5xl font-light text-center mb-12">{t("contact.heading")}</h2>
 
       <div className="mt-12 flex flex-wrap justify-center items-center gap-8 text-lg text-white font-light">
         <FaMailBulk />
-        <a
-          href="mailto:adrian.tetlak@gmail.com"
-          className="hover:text-pink-500 transition"
-        >
+        <a href="mailto:adrian.tetlak@gmail.com" className="hover:text-pink-500 transition">
           adrian.tetlak@gmail.com
         </a>
         <FaGithub />
@@ -27,7 +22,7 @@ const Contact: React.FC = () => {
         </a>
         <FaLinkedin />
         <a
-          href="https://linkedin.com/in/yourprofile"
+          href="www.linkedin.com/in/soffen"
           target="_blank"
           rel="noreferrer"
           className="hover:text-pink-500 transition"

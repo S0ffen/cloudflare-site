@@ -20,6 +20,7 @@
     "heading": "Projects",
     "cta": "View project",
     "commercialNote": "Problem & solution",
+    "technologies": "Technologies used in the project",
     "groups": {
       "commercial": "Commercial project",
       "own": "Own project"
@@ -79,5 +80,9 @@
         "description": "A Python service for extracting EXIF metadata from photos, used to read technical image details and prepare them for downstream processing."
       }
     }
+  },
+  "contact": {
+    "heading": "Get in touch",
+    "description": "I’m always open to discussing potential collaborations, new projects, or just exchanging ideas. Feel free to reach out, and I’ll get back to you as soon as possible!"
   }
 }

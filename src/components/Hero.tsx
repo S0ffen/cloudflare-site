@@ -5,13 +5,13 @@ const floatingTiles = [
   //Lewa strona
   {
     label: ".NET",
-    className: "left-[4%] top-[20%] hidden lg:flex",
+    className: "left-[4%] top-[20%] hidden xl:flex",
     rotate: -24,
     delay: 0.1,
   },
   {
     label: "C#",
-    className: "left-[4%] top-[40%] hidden lg:flex",
+    className: "left-[4%] top-[40%] hidden xl:flex",
     rotate: 24,
     delay: 0.25,
   },
