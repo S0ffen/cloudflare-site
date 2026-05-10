@@ -52,11 +52,11 @@
         "sections": [
           {
             "title": "Opis projektu",
-            "content": "Nowoczesna aplikacja BMS/SCADA do monitorowania instalacji budynkowych w czasie rzeczywistym. System pozwala wizualizować dane z urządzeń, analizować trendy historyczne, śledzić alarmy i zdarzenia oraz prezentować aktualny stan obiektu na dynamicznych widokach dostępnych z poziomu przeglądarki."
+            "content": "Nowoczesna aplikacja BMS/SCADA do monitorowania i wizualizacji instalacji budynkowych w czasie rzeczywistym. System umożliwia podgląd aktualnego stanu obiektu, analizę danych historycznych, obsługę alarmów i zdarzeń oraz prezentację informacji na dynamicznych widokach dostępnych z poziomu przeglądarki."
           },
           {
             "title": "Moja rola",
-            "content": "Byłem odpowiedzialny za rozwój kluczowych elementów frontendu w Blazorze oraz ich integrację z backendem .NET. Tworzyłem komponenty wizualizujące urządzenia, obsługę statusów i zdarzeń, logikę uprawnień użytkowników oraz zaawansowane wykresy Highcharts z zoomowaniem, eksportem danych, tooltipami, flagami zdarzeń i automatycznym odświeżaniem."
+            "content": "Odpowiadałem za rozwój kluczowych elementów frontendu w Blazorze oraz integrację aplikacji z backendem. Implementowałem dynamiczne widoki obiektów, komponenty wizualne, obsługę danych w czasie rzeczywistym, interaktywne wykresy Highcharts, mechanizmy uprawnień oraz logikę związaną z alarmami i zdarzeniami."
           },
           {
             "title": "Moje osiągnięcia",

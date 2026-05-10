@@ -52,11 +52,11 @@
         "sections": [
           {
             "title": "Project overview",
-            "content": "A modern BMS/SCADA application for monitoring building installations in real time. The system makes it possible to visualize device data, analyze historical trends, track alarms and events, and present the current state of a facility through dynamic browser-based views."
+            "content": "A modern BMS/SCADA application for real-time monitoring and visualization of building installations. The system makes it possible to view the current state of a facility, analyze historical data, handle alarms and events, and present information through dynamic browser-based views."
           },
           {
             "title": "My role",
-            "content": "I was responsible for developing key frontend elements in Blazor and integrating them with the .NET backend. I built components for device visualization, status and event handling, user permission logic, and advanced Highcharts charts with zooming, data export, tooltips, event flags, and automatic refresh."
+            "content": "I was responsible for developing key frontend elements in Blazor and integrating the application with the backend. I implemented dynamic facility views, visual components, real-time data handling, interactive Highcharts charts, permission mechanisms, and logic related to alarms and events."
           },
           {
             "title": "My achievements",
