@@ -22,7 +22,7 @@ const Contact: React.FC = () => {
         </a>
         <FaLinkedin />
         <a
-          href="www.linkedin.com/in/soffen"
+          href="https://www.linkedin.com/in/soffen"
           target="_blank"
           rel="noreferrer"
           className="hover:text-pink-500 transition"
