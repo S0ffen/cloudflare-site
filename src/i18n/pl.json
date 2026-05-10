@@ -68,15 +68,15 @@
           }
         ]
       },
-      "qrReader": {
-        "label": "Usługa backendowa",
-        "title": "QR Code Reader Service",
-        "description": "Usługa napisana w Pythonie do odczytywania kodów QR z dostarczonych obrazów, przygotowana do integracji z większymi procesami i automatyzacją obiegu danych."
-      },
       "photoExif": {
         "label": "Usługa backendowa",
         "title": "Photo EXIF Reader Service",
         "description": "Serwis w Pythonie analizujący metadane EXIF zdjęć, wykorzystywany do odczytu informacji technicznych i przygotowania danych do dalszego przetwarzania."
+      },
+      "qrReader": {
+        "label": "Usługa backendowa",
+        "title": "QR Code Reader Service",
+        "description": "Usługa napisana w Pythonie do odczytywania kodów QR z dostarczonych obrazów, przygotowana do integracji z większymi procesami i automatyzacją obiegu danych."
       }
     }
   }

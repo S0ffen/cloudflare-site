@@ -1,14 +1,99 @@
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 
+const floatingTiles = [
+  //Lewa strona
+  {
+    label: ".NET",
+    className: "left-[4%] top-[20%] hidden lg:flex",
+    rotate: -24,
+    delay: 0.1,
+  },
+  {
+    label: "C#",
+    className: "left-[4%] top-[40%] hidden lg:flex",
+    rotate: 24,
+    delay: 0.25,
+  },
+  {
+    label: "ASP.NET",
+    className: "left-[4%] bottom-[26%] hidden xl:flex",
+    rotate: -24,
+    delay: 0.4,
+  },
+  {
+    label: "Blazor",
+    className: "left-[4%] bottom-[7%] hidden xl:flex",
+    rotate: 24,
+    delay: 0.55,
+  },
+  //Prawa strona
+  {
+    label: "TypeScript",
+    className: "right-[4%] top-[20%] hidden 2xl:flex",
+    rotate: -24,
+    delay: 0.7,
+  },
+  {
+    label: "Javascript",
+    className: "right-[4%] top-[40%] hidden 2xl:flex",
+    rotate: 24,
+    delay: 0.9,
+  },
+  {
+    label: "React",
+    className: "right-[4%] bottom-[26%] hidden xl:flex",
+    rotate: 24,
+    delay: 1.15,
+  },
+  {
+    label: "Next.js",
+    className: "right-[4%] bottom-[7%] hidden xl:flex",
+    rotate: -24,
+    delay: 1.35,
+  },
+];
+
 const Hero: React.FC = () => {
   const { t } = useTranslation();
 
   return (
     <section
       id="home"
-      className="min-h-screen flex flex-col md:flex-row items-center justify-center md:justify-center gap-x-10 px-6 md:px-32"
+      className="relative isolate min-h-screen overflow-hidden flex flex-col md:flex-row items-center justify-center md:justify-center gap-x-10 px-6 md:px-32"
     >
+      <div aria-hidden="true" className="pointer-events-none absolute inset-0 -z-10">
+        {floatingTiles.map((tile) => (
+          <motion.div
+            key={tile.label}
+            className={`absolute h-36 w-36 items-center justify-center rounded-xl border-2 border-pink-500/45 bg-[#160a2d]/45 text-lg font-bold text-pink-200 shadow-[0_0_28px_rgba(236,72,153,0.22)] backdrop-blur-sm md:h-32 md:w-32 ${tile.className}`}
+            initial={{ opacity: 0, y: 22, rotate: tile.rotate }}
+            animate={{
+              opacity: 1,
+              y: [0, -12, 0],
+              rotate: [tile.rotate, tile.rotate + 5, tile.rotate],
+            }}
+            transition={{
+              opacity: { duration: 0.5, delay: tile.delay },
+              y: {
+                duration: 3,
+                repeat: Infinity,
+                ease: "easeInOut",
+                delay: tile.delay,
+              },
+              rotate: {
+                duration: 6,
+                repeat: Infinity,
+                ease: "easeInOut",
+                delay: tile.delay,
+              },
+            }}
+          >
+            {tile.label}
+          </motion.div>
+        ))}
+      </div>
+
       <motion.div
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
