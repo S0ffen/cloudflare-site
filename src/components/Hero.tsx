@@ -30,13 +30,13 @@ const floatingTiles = [
   //Prawa strona
   {
     label: "TypeScript",
-    className: "right-[4%] top-[20%] hidden 2xl:flex",
+    className: "right-[4%] top-[20%] hidden xl:flex",
     rotate: -24,
     delay: 0.7,
   },
   {
     label: "Javascript",
-    className: "right-[4%] top-[40%] hidden 2xl:flex",
+    className: "right-[4%] top-[40%] hidden xl:flex",
     rotate: 24,
     delay: 0.9,
   },
